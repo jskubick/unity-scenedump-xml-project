@@ -1,0 +1,3 @@
+[submodule "Assets/Editor/unity-scenedump-xml"]
+	path = Assets/Editor/unity-scenedump-xml
+	url = https://github.com/jskubick/unity-scenedump-xml.git
