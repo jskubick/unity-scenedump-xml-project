@@ -1,59 +1,107 @@
-# unity-scenedump-xml-project
-Example Unity project for my Unity Editor extension to generate XML representation of Scene hierarchy
+Unity-Scenedump-Xml is a configurable Unity Editor extension that generates an XML representation of a Scene 
+hierarchy. 
+(Example output: 
+[Terse](http://github.com/jskubick/unity-scenedump-xml-project/blob/master/samples/scene-terse.xml)
+or
+[Verbose](http://github.com/jskubick/unity-scenedump-xml-project/blob/master/samples/scene-verbose.xml)
+)
 
-## IMPORTANT
+# IMPORTANT
 
-The editor extension you're interested in is actually a Git submodule. When you check out THIS repository, make sure you add the **--recursive** flag so Git will check out the editor extension *itself:*
+This repo has a submodule. 
+If you don't know what this means, make sure you actually **read** the [Installation section](#Installation),
+or it's probably *not* going to work.
+
+# Installation
+
+
+### I want to try out the extension with its sample Unity project.
+
+You'll want to check out *this* repo, which includes extension itself as a submodule:
 
 `git clone --recursive https://github.com/jskubick/unity-scenedump-xml-project.git`
 
 
+### I have an existing Unity project. It's already in Git.
+
+You'll want to add the repo of the extension itself as a submodule:
+
+1. Create Assets/Editor within your project if it doesn't already exist
+
+2. cd to Assets/Editor
+
+3. execute `git submodule add https://github.com/jskubick/unity-scenedump-xml.git unity-scenedump-xml`
+
+4. If Assets/Editor/unity-scenedump-xml is still empty, execute `git submodule update --init --recursive`
 
 
-# Help!
+### I have an existing Unity project. It's not in Git yet.
+
+Put your Unity project in Git *first*, then follow the directions from the previous section.
+
+
+### I have an existing Unity project. It's not *going* to be in Git.
+
+1. Create Assets/Editor within your project if it doesn't already exist.
+
+2. cd to Assets/Editor
+
+3. `git clone --recursive https://github.com/jskubick/unity-scenedump-xml.git`
+
+4. If Assets/Editor/unity-scenedump-xml is still empty, execute `git submodule update --init --recursive`
+
+
+### Uh oh, something went wrong!
+
+See the [Troubleshooting Section](#Troubleshooting)
+
+# How to use
+
+By default, the extension adds a new menu to Unity ("Test") with two options:
+
+* Export Scene as Xml (terse)
+* Export Scene as Xml (verbose)
+
+You can easily modify the menu and customize the options by editing XmlSceneDumper.cs (don't worry, it's easy).
+
+The 'terse' and 'verbose' options represent two common use cases... 'terse' is nicer (IMHO) for humans to read,
+but likely to be a pain to parse. 'Verbose' is harder to read on a typical 16:9 monitor because it squanders your
+most precious resource (vertical screen space) and surrounds it with an ocean of whitespace... but also separates
+out *most* values so they're easy to extract without playing games with regular expressions.
+
+# Troubleshooting
 
 ### I cloned this repo, but the Assets/Editor/ directory is empty!
 
-Oops. You forgot to include the --recursive flag when performing the `git clone` earlier. No worries, here's how to fix it:
+Oops. No worries, here's how to fix it:
 
 1. cd to the Unity project's root folder (the one containing the Assets directory)
 
 2. execute `git submodule update --init --recursive`
 
-### I have an existing Unity project. I want to use the extension with it.
-
-("$/" refers to your Unity project's root directory)
-
-1. Create $/Assets/Editor if it doesn't already exist
-
-2. cd to $Assets/Editor
-
-3. execute `git submodule add https://github.com/jskubick/unity-scenedump-xml.git unity-scenedump-xml`
-
-4. If $/Assets/Editor/unity-scenedump-xml is still empty, execute `git submodule update --init --recursive`
-
-### I got `DirectoryNotFoundException` when I tried to run it
-
-You need to edit OUTPUT_FILE in XmlSceneDumper.cs
-
-### I want to enhance the extension
-
-If you've looked at the repository with the actual .cs files for the editor extension, you've probably noticed that it's just the source files (no Visual Studio .sln or other files of that type). That's because it's just assumed that you're going to be working on them in the context of an actual Unity project (which dynamically (re)generates the files for Visual Studio in the background). I couldn't even begin to tell you how to build the editor extension's submodule independently of Unity and Visual Studio. I don't know whether it's even meaningfully *possible* to build it independently of Unity and Visual Studio, because the extension literally has no *purpose* aside from running inside Unity.
-
-### I want to report a bug
-
-Please make sure the bug manifests itself when generating XML from this example project's scene... or at the VERY least, post a URL where I can download the same Unity project you're looking at. Feel free to fork this project, update the Unity project so that the bug manifests, and submit a pull request. The example project is literally something I threw together in 15 minutes for the sake of having a consistent testbed to generate XML against.
 
 ### The XML generated by this extension is AWFUL to work with.
 
-My apologies. If you can think of any concrete structural improvements that will make it easier to parse with your favorite framework or app, please let me know. 
+My apologies.
+If you can think of any concrete structural improvements that will make it easier to parse with your favorite framework or app, please let me know. 
+
+
 
 
 ### What WERE you thinking about when you came up with the Schema?
 
-Honestly, there never really WAS a formal schema. This started out as a library to generate compact, human-readable output that nevertheless happened to be structurally-valid XML, and mutated into something capable of generating more full-bodied XML.
+Honestly, nothing. There *isn't* a formal schema. This whole thing started out as a quick and dirty hack to 
+generate compact, human-readable output that nevertheless happened to be structurally-valid XML so I could use
+XSLT to make it look pretty, then took on a life of its own after I decided to do a little more work and make it
+capable of generating more verbose XML (that's presumably easier for things like XSLT and various frameworks to
+deal with).
 
-All things being equal, for XML that will be read primarily by humans, I tend to prefer attributes over elements, and grouping related information together on a single line. You can see this in the way I handled Transform properties. If you tell the extension to render Transform values as properties, it puts them right in the GameObject tag itself (since by definition every GameObject MUST have exactly one Transform, and a Transform can't exist independently of a GameObject).
+All things being equal, for XML that will be read primarily by humans, I tend to prefer attributes over elements, 
+and grouping related information together on a single line. 
+You can see this in the way I handled Transform properties. 
+If you tell the extension to render Transform values as properties, it puts them right in the GameObject tag itself 
+(since by definition every GameObject MUST have exactly one Transform, and a Transform can't exist independently 
+of a GameObject).
 
 
 ### What can I configure?
@@ -67,3 +115,35 @@ For now, the extension has no formal UI of its own. You have to hardcode the XML
 2. Instantiate an XmlSceneHierarchy object, and call its .parse() method to build the XML document.
 
 3. Do whatever you like with its document. XmlSceneDumper.cs writes it using a StreamWriter, but that's just a quick & dirty suggestion. 
+
+### Key configuration options:
+
+`xmlPrefix` -- when null, tags don't have a prefix. When non-null, this specifies their prefix. For example, if xmlPrefix=null, you might see a tag like <GameObject >. If xmlPrefix="unity", the same tag would render as <unity:GameObject >.
+
+`includeValueStringAsProperty` -- when true, attempts to render things like Vector3 values as property strings. For example, position="(0,1,2)". In addition, when true, values associated with a GameObject's Transform get added to the GameObject tag itself.
+
+`includeValueAsDiscreteElements` -- when true, renders values for things like Vector3 with an element for the object type, and a child element for each value.
+
+Note that the previous two options aren't mutually exclusive. However, if both are 'true', the properties with the text values will be added to the <Transform> element, and NOT the <GameObject> element.
+
+`compressArrays` -- Unity has a **lot** of arrays where the first element or two has a unique value, but the remainder all have the same value. If compressArrays=true, the renderer attempts to consolidate multiple elements with the same value into a single element. For terse XML, this is probably what you want. For XML that you're going to parse with code you didn't write yourself, it's probably not the behavior your want.
+
+`xmlNamespace` -- I had to give the XML processor a namespace, so I made something plausible up. Feel free to change it to whatever you like. The actual URL doesn't matter, because there's nothing AT that URL anyway.
+
+`superclassContainerTagName` and `superclassTagName`, together with `tagnameMonoBehaviour` and `MonoBehaviour`, determine how superclasses are represented: 
+
+* If superclassContainerTagName is null, the container tag is omitted. Note that superclassTagName must NOT be null.
+
+* If `tagnameBehaviour` and `tagnameMonoBehaviour` are null, any class that extends UnityEngine.Component gets rendered into a <Component> tag. When listing superclasses, we stop at the class whose Type.BaseType is UnityEngine.Component (since it's obvious by the <Component> tag itself that the class extends Component).
+
+* If `tagnameBehaviour` is non-null, any Component that extends UnityEngine.Behaviour will render into a <Behaviour> (or whatever you set the value to) tag instead, and when listing the superclasses, we stop at the last class before Behaviour.
+
+* If `tagnameMonoBehaviour` is non-null, any Behaviour that extends MonoBehaviour will render into a <MonoBehaviour> tag (or whatever you set the value to) instead, and when listing the superclasses, we stop at the last class before MonoBehaviour.
+
+There's no real reason why I couldn't have done this for other classes as well. I just decided I've spent way too much time working on this, and stopped with MonoBehaviour for now. If you have lots of time to burn, feel free to implement support for other classes as well.
+
+* `interfaceContainerTagName` and `interfaceTagName` work the same way as their 'superclass' counterpards. 
+
+* `typeAbbreviations` and `valueAbbreviations` are 2-dimensional String[,] arrays defining name/value substitution pairs that get applied to... surprisingly... type names and values. If the array is null, no substitutions are made. Note that this is simple String.Replace(), and does NOT involve regular expressions (the original version did, but I decided to simplify it).
+
+If you look at XmlSceneDumperOptions, you'll notice a ton of disused properties that were used in the past, but aren't currently used at all & planned for removal. 
