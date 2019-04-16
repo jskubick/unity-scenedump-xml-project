@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Scene version="1" xmlns="http://pantherkitty.software/xml/unity-scene/1.0">
+  <meta>
+    <value-abbreviation before="&#xA;" after=" •¬ " />
+    <type-abbreviation before="UnityEngine." after="µ." />
+    <type-abbreviation before="System." after="§." />
+  </meta>
   <GameObject name="Directional Light" id="0x00002A5E" layer="0" activeInHierarchy="True" isStatic="False">
     <Transform id="0x00002A62" position="(0.0, 3.0, 0.0)" rotation="(50.0, 330.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
     <components>
@@ -14,7 +19,7 @@
         <property name="Draw Halo" type="§.Boolean">False</property>
         <property name="Baking Output" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
         <property name="Render Mode" type="§.String" sp-type="Enum" sp-enum-index="0">Auto</property>
-        <property name="Culling Mask" type="§.UInt32" sp-type="LayerMask">FFFFFFFF</property>
+        <property name="Culling Mask" type="§.UInt32">FFFFFFFF</property>
         <property name="Lightmapping" type="§.String" sp-type="Enum" sp-enum-index="0">Mixed</property>
         <property name="Light Shadow Caster Mode" type="§.Int32">0</property>
         <property name="Area Size" type="µ.Vector2" Area_Size="(1.0, 1.0)" />
@@ -114,7 +119,7 @@
             <property name="Orthographic" type="§.Boolean">False</property>
             <property name="Orthographic size" type="§.Single">5</property>
             <property name="Depth" type="§.Single">-1</property>
-            <property name="Culling Mask" type="§.UInt32" sp-type="LayerMask">FFFFFFFF</property>
+            <property name="Culling Mask" type="§.UInt32">FFFFFFFF</property>
             <property name="Rendering Path" type="§.String" sp-type="Enum" sp-enum-index="0">Use Graphics Settings</property>
             <property name="Target Display" type="§.Int32">0</property>
             <property name="Target Eye" type="§.Int32">3</property>
@@ -186,7 +191,7 @@
         <extends>µ.EventSystems.UIBehaviour</extends>
         <property name="Ignore Reversed Graphics" type="§.Boolean">True</property>
         <property name="Blocking Objects" type="§.String" sp-type="Enum" sp-enum-index="0">None</property>
-        <property name="Blocking Mask" type="§.UInt32" sp-type="LayerMask">FFFFFFFF</property>
+        <property name="Blocking Mask" type="§.UInt32">FFFFFFFF</property>
       </MonoBehaviour>
     </components>
     <gameobjects>
