@@ -22,9 +22,9 @@ How to clone this example project **and** the files needed for the Editor extens
 
 Note the **--recursive** flag. It's important. If you omit it, you'll likely end up with an empty directory named Assets/Editor/unity-scenedump-xml.
 
-If you screw up, see the [unity-scenedump-xml submodule's README.md file](https://github.com/jskubick/unity-scenedump-xml-project.git#Troubleshooting). 
+If you screw up, see the [unity-scenedump-xml submodule's README.md file](https://github.com/jskubick/unity-scenedump-xml.git#Troubleshooting). 
 
-If you want to use the extension with your own project, instructions are in the [unity-scenedump-xml submodule's README.md file](https://github.com/jskubick/unity-scenedump-xml-project.git#Installation)
+If you want to use the extension with your own project, instructions are in the [unity-scenedump-xml submodule's README.md file](https://github.com/jskubick/unity-scenedump-xml.git#Installation)
 
-Ditto, for [the rest of this project's documentation](https://github.com/jskubick/unity-scenedump-xml-project.git)
+Ditto, for [the rest of this project's documentation](https://github.com/jskubick/unity-scenedump-xml.git)
 
