@@ -28,3 +28,7 @@ If you want to use the extension with your own project, instructions are in the 
 
 Ditto, for [the rest of this project's documentation](https://github.com/jskubick/unity-scenedump-xml.git)
 
+
+### Weird error while atempting to do this under Windows?
+
+[Look here](http://github.com/jskubick/unity-scenedump-xml-project/blob/master/Windows.md) for more information.
