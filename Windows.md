@@ -39,7 +39,7 @@ Try to get your PATH down to 600-800 characters, and repeat this process in the 
 
 You can NOT solve this program by defining an environment variable like "PF" equal to "c:\Program Files" and replacing "c:\Program Files" with "%PF%". It HAS to be a symlink. Why? Using a %PF% environment variable just makes the problem even MORE insidious. Your paths will look nice & short when you view them from the environment variable editor window, but their FULLY EXPANDED length is the one that really COUNTS. c:\p\pf counts as 7 characters. %PF% *looks* like 4 characters, but expands out and COUNTS as 16 characters. If you try to solve the problem by embedding environment variables within environment variables, you'll just set yourself up for weird error messages suggesting that something isn't in your path... then find them sitting there in plain sight when you print the environment variable's value.
 
-If you're really hurting for space, you can move the symlinks for c:program files, c:\program files (x86), and c:\windows\system32 directly to the c: drive's root directory, and maybe even give them single-letter symlinks (say, "\f", "\q", and "\s", respectively), shaving them down even further.
+If you're really hurting for space, you can move the symlinks for c:\program files, c:\program files (x86), and c:\windows\system32 directly to the c: drive's root directory, and maybe even give them single-letter symlinks (say, "\f", "\q", and "\s", respectively), shaving them down even further.
 
 Don't try to dispense with the drive letter, unless you want to set yourself up for another round of insidious bugs. The two extra characters it takes to add "c:" to "c:\f" might save your HOURS of troubleshooting 17 months from now.
 
