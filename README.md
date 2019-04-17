@@ -1,8 +1,8 @@
 Unity-Scenedump-Xml is a configurable Unity Editor extension that generates an XML representation of a Scene 
 hierarchy. 
 (Example output: 
-[Terse](http://github.com/jskubick/unity-scenedump-xml-project/blob/master/samples/scene-terse.xml)
-or
+[Terse](http://github.com/jskubick/unity-scenedump-xml-project/blob/master/samples/scene-terse.xml),
+[Compact](http://github.com/jskubick/unity-scenedump-xml-project/blob/master/samples/scene-compact.xml), or 
 [Verbose](http://github.com/jskubick/unity-scenedump-xml-project/blob/master/samples/scene-verbose.xml)
 )
 
