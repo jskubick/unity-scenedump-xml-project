@@ -19,21 +19,31 @@ Now, create two symlinks:
     mklink -d c:\p\pf "c:\program files"
     mklink -d c:\p\pf86 "c:\program files (x86)"
 
-... and update what's left of your PATH to replace every instance of "c:\Program Files\" and "c:\Program Files(x86)" with "c:\p\pf\" and "c:p\pf86\"
+... and update what's left of your PATH to replace every instance of "c:\Program Files" and "c:\Program Files(x86)" with "c:\p\pf" and "c:\p\pf86"
 
 OK, that should get you a LITTLE bit of breathing room. NOW, look for all of your commandline apps that want to live in their own directory & have it added to your path... say... c:\bin\apache-maven-3.3.9\bin\:
 
     mklink -d c:\p\mvn "c:\bin\apache-maven-3.3.9\bin"
 
-... and replace that huge path with "c:\p\mvn\;"
+... and replace that huge path with "c:\p\mvn;"
 
 While you're at it, you probably have a few glaring items that have OUTRAGEOUSLY long paths. SQL Server Express comes to mind as a particularly egregious offender:
 
-    mklink -d c:\p\msql130 "c:\program files\microsoft sql server\130\tools\binn\"
+    mklink -d c:\p\msql130 "c:\program files\microsoft sql server\130\tools\binn"
 
-... and replace it with "c:\p\msql130\" in PATH. 
+... and replace it with "c:\p\msql130" in PATH. 
 
 Try to get your PATH down to 600-800 characters, and repeat this process in the future as newly-installed SDKs and other things cause it to continue growing. 
+
+## Note:
+
+You can NOT solve this program by defining an environment variable like "PF" equal to "c:\Program Files" and replacing "c:\Program Files" with "%PF%". It HAS to be a symlink. Why? Using a %PF% environment variable just makes the problem even MORE insidious. Your paths will look nice & short when you view them from the environment variable editor window, but their FULLY EXPANDED length is the one that really COUNTS. c:\p\pf counts as 7 characters. %PF% *looks* like 4 characters, but expands out and COUNTS as 16 characters. If you try to solve the problem by embedding environment variables within environment variables, you'll just set yourself up for weird error messages suggesting that something isn't in your path... then find them sitting there in plain sight when you print the environment variable's value.
+
+If you're really hurting for space, you can move the symlinks for c:program files, c:\program files (x86), and c:\windows\system32 directly to the c: drive's root directory, and maybe even give them single-letter symlinks (say, "\f", "\q", and "\s", respectively), shaving them down even further.
+
+Don't try to dispense with the drive letter, unless you want to set yourself up for another round of insidious bugs. The two extra characters it takes to add "c:" to "c:\f" might save your HOURS of troubleshooting 17 months from now.
+
+### anyway, continuing...
 
 Now... uninstall every copy of Git that's listed in Control Panel's add/remove programs, download a fresh copy of Git, and install it. Reboot, just to be safe (this is, after all Windows... probably 80% of the things that cause the computer to be dysfunctional for no apparent reason go away after a reboot).
 
