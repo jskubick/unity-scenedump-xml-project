@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <u:Scene version="1" xmlns:u="http://pantherkitty.software/xml/unity-scene/1.0">
-  <u:GameObject name="Directional Light" tag="Untagged" id="0x00002A66" layer="0" activeInHierarchy="True" isStatic="False">
-    <u:Transform id="0x00002A6A">
+  <u:GameObject name="Directional Light" tag="Untagged" id="0x00002A5A" layer="0" activeInHierarchy="True" isStatic="False">
+    <u:Transform id="0x00002A5E">
+      <u:referenced-by component-id="0x00002AB6" property-name="someOtherTransform">CameraContainer -» u:MonoBehaviour(pantherkitty.unity.scenedump.example.PointlessBehavior) •-» someOtherTransform</u:referenced-by>
       <u:Vector3 name="position">
         <u:x>0</u:x>
         <u:y>3</u:y>
@@ -19,45 +20,48 @@
       </u:Vector3>
     </u:Transform>
     <u:components>
-      <u:Behaviour type="UnityEngine.Light" id="0x00002A68" enabled="True" isActiveAndEnabled="True">
+      <u:Behaviour type="UnityEngine.Light" id="0x00002A5C" enabled="True" isActiveAndEnabled="True">
         <u:properties>
-          <u:property name="Type" type="System.String" sp-type="Enum" sp-enum-index="1">Directional</u:property>
-          <u:property name="Color" type="UnityEngine.Color">
-            <u:Color name="Color">
+          <u:property name="m_Type" type="System.String" sp-name="Type" sp-type="Enum" sp-enum-index="1">Directional</u:property>
+          <u:property name="m_Color" type="UnityEngine.Color" sp-name="Color">
+            <u:Color name="m_Color">
               <u:r>1</u:r>
               <u:g>0.9568627</u:g>
               <u:b>0.8392157</u:b>
               <u:a>1</u:a>
             </u:Color>
           </u:property>
-          <u:property name="Intensity" type="System.Single">1</u:property>
-          <u:property name="Range" type="System.Single">10</u:property>
-          <u:property name="Spot Angle" type="System.Single">30</u:property>
-          <u:property name="Cookie Size" type="System.Single">10</u:property>
-          <u:property name="Shadows" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
-          <u:property name="Draw Halo" type="System.Boolean">False</u:property>
-          <u:property name="Baking Output" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
-          <u:property name="Render Mode" type="System.String" sp-type="Enum" sp-enum-index="0">Auto</u:property>
-          <u:property name="Culling Mask" type="System.UInt32">FFFFFFFF</u:property>
-          <u:property name="Lightmapping" type="System.String" sp-type="Enum" sp-enum-index="0">Mixed</u:property>
-          <u:property name="Light Shadow Caster Mode" type="System.Int32">0</u:property>
-          <u:property name="Area Size" type="UnityEngine.Vector2">
-            <u:Vector2 name="Area Size">
+          <u:property name="m_Intensity" type="System.Single" sp-name="Intensity">1</u:property>
+          <u:property name="m_Range" type="System.Single" sp-name="Range">10</u:property>
+          <u:property name="m_SpotAngle" type="System.Single" sp-name="Spot Angle">30</u:property>
+          <u:property name="m_CookieSize" type="System.Single" sp-name="Cookie Size">10</u:property>
+          <u:property name="m_Shadows" type="scenedump.UnknownType" sp-name="Shadows" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+          <u:property name="m_DrawHalo" type="System.Boolean" sp-name="Draw Halo">False</u:property>
+          <u:property name="m_BakingOutput" type="scenedump.UnknownType" sp-name="Baking Output" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+          <u:property name="m_RenderMode" type="System.String" sp-name="Render Mode" sp-type="Enum" sp-enum-index="0">Auto</u:property>
+          <u:property name="m_CullingMask" type="System.UInt32" sp-name="Culling Mask">FFFFFFFF</u:property>
+          <u:property name="m_Lightmapping" type="System.String" sp-name="Lightmapping" sp-type="Enum" sp-enum-index="0">Mixed</u:property>
+          <u:property name="m_LightShadowCasterMode" type="System.Int32" sp-name="Light Shadow Caster Mode">0</u:property>
+          <u:property name="m_AreaSize" type="UnityEngine.Vector2" sp-name="Area Size">
+            <u:Vector2 name="m_AreaSize">
               <u:x>1</u:x>
               <u:y>1</u:y>
             </u:Vector2>
           </u:property>
-          <u:property name="Bounce Intensity" type="System.Single">1</u:property>
-          <u:property name="Color Temperature" type="System.Single">6570</u:property>
-          <u:property name="Use Color Temperature" type="System.Boolean">False</u:property>
-          <u:property name="Shadow Radius" type="System.Single">0</u:property>
-          <u:property name="Shadow Angle" type="System.Single">0</u:property>
+          <u:property name="m_BounceIntensity" type="System.Single" sp-name="Bounce Intensity">1</u:property>
+          <u:property name="m_ColorTemperature" type="System.Single" sp-name="Color Temperature">6570</u:property>
+          <u:property name="m_UseColorTemperature" type="System.Boolean" sp-name="Use Color Temperature">False</u:property>
+          <u:property name="m_ShadowRadius" type="System.Single" sp-name="Shadow Radius">0</u:property>
+          <u:property name="m_ShadowAngle" type="System.Single" sp-name="Shadow Angle">0</u:property>
         </u:properties>
       </u:Behaviour>
     </u:components>
   </u:GameObject>
-  <u:GameObject name="Cube" tag="Untagged" id="0x00002AA6" layer="0" activeInHierarchy="True" isStatic="False">
-    <u:Transform id="0x00002AAC">
+  <u:GameObject name="Cube" tag="Untagged" id="0x00002A9A" layer="0" activeInHierarchy="True" isStatic="False">
+    <u:referenced-by component-id="0x00002A70" property-name="cube">Main -» u:MonoBehaviour(CubeRotator) •-» cube</u:referenced-by>
+    <u:referenced-by component-id="0x00002A8E" property-name="cube">Canvas -» Button -» u:MonoBehaviour(ButtonHandler) •-» cube</u:referenced-by>
+    <u:referenced-by component-id="0x00002AB6" property-name="someGameObject">CameraContainer -» u:MonoBehaviour(pantherkitty.unity.scenedump.example.PointlessBehavior) •-» someGameObject</u:referenced-by>
+    <u:Transform id="0x00002AA0">
       <u:Vector3 name="position">
         <u:x>0</u:x>
         <u:y>3</u:y>
@@ -75,33 +79,33 @@
       </u:Vector3>
     </u:Transform>
     <u:components>
-      <u:Component type="UnityEngine.MeshFilter" id="0x00002AAA">
+      <u:Component type="UnityEngine.MeshFilter" id="0x00002A9E">
         <u:properties>
-          <u:property name="Mesh" type="UnityEngine.Mesh" sp-type="ObjectReference" target-id="0x2ABC">Cube Instance Instance Instance Instance (UnityEngine.Mesh)</u:property>
+          <u:property name="m_Mesh" type="UnityEngine.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x00002AB0">Cube Instance Instance Instance Instance (UnityEngine.Mesh)</u:property>
         </u:properties>
       </u:Component>
-      <u:Component type="UnityEngine.MeshRenderer" id="0x00002AA8">
+      <u:Component type="UnityEngine.MeshRenderer" id="0x00002A9C">
         <u:extends>
           <u:superclass>UnityEngine.Renderer</u:superclass>
         </u:extends>
         <u:properties>
-          <u:property name="Cast Shadows" type="System.String" sp-type="Enum" sp-enum-index="1">On</u:property>
-          <u:property name="Receive Shadows" type="System.Boolean">True</u:property>
-          <u:property name="Dynamic Occludee" type="System.Boolean">True</u:property>
-          <u:property name="Motion Vectors" type="System.String" sp-type="Enum" sp-enum-index="1">Per Object Motion</u:property>
-          <u:property name="Light Probe Usage" type="System.Int32">1</u:property>
-          <u:property name="Reflection Probe Usage" type="System.Int32">1</u:property>
-          <u:property name="Rendering Layer Mask" type="System.Int32">1</u:property>
-          <u:property name="Renderer Priority" type="System.Int32">0</u:property>
-          <u:property-array name="Materials" type="System.Object[]" dimensions="1" length="1" sp-type="Generic">
-            <u:value name="Materials[0]" type="UnityEngine.Material" index="0">RedMaterial (Instance) (Instance) (Instance) (Instance) (UnityEngine.Material)</u:value>
+          <u:property name="m_CastShadows" type="System.String" sp-name="Cast Shadows" sp-type="Enum" sp-enum-index="1">On</u:property>
+          <u:property name="m_ReceiveShadows" type="System.Boolean" sp-name="Receive Shadows">True</u:property>
+          <u:property name="m_DynamicOccludee" type="System.Boolean" sp-name="Dynamic Occludee">True</u:property>
+          <u:property name="m_MotionVectors" type="System.String" sp-name="Motion Vectors" sp-type="Enum" sp-enum-index="1">Per Object Motion</u:property>
+          <u:property name="m_LightProbeUsage" type="System.Int32" sp-name="Light Probe Usage">1</u:property>
+          <u:property name="m_ReflectionProbeUsage" type="System.Int32" sp-name="Reflection Probe Usage">1</u:property>
+          <u:property name="m_RenderingLayerMask" type="System.Int32" sp-name="Rendering Layer Mask">1</u:property>
+          <u:property name="m_RendererPriority" type="System.Int32" sp-name="Renderer Priority">0</u:property>
+          <u:property-array name="m_Materials" type="System.Object[]" dimensions="1" length="1" sp-name="Materials" sp-type="Generic">
+            <u:value name="m_Materials[0]" type="UnityEngine.Material" index="0">RedMaterial (Instance) (Instance) (Instance) (Instance) (UnityEngine.Material)</u:value>
           </u:property-array>
         </u:properties>
       </u:Component>
     </u:components>
   </u:GameObject>
-  <u:GameObject name="Plane" tag="Untagged" id="0x00002A7E" layer="0" activeInHierarchy="True" isStatic="False">
-    <u:Transform id="0x00002A86">
+  <u:GameObject name="Plane" tag="Untagged" id="0x00002A72" layer="0" activeInHierarchy="True" isStatic="False">
+    <u:Transform id="0x00002A7A">
       <u:Vector3 name="position">
         <u:x>0</u:x>
         <u:y>0</u:y>
@@ -119,45 +123,45 @@
       </u:Vector3>
     </u:Transform>
     <u:components>
-      <u:Component type="UnityEngine.MeshFilter" id="0x00002A84">
+      <u:Component type="UnityEngine.MeshFilter" id="0x00002A78">
         <u:properties>
-          <u:property name="Mesh" type="UnityEngine.Mesh" sp-type="ObjectReference" target-id="0x2A74">Plane Instance Instance Instance Instance (UnityEngine.Mesh)</u:property>
+          <u:property name="m_Mesh" type="UnityEngine.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x00002A68">Plane Instance Instance Instance Instance (UnityEngine.Mesh)</u:property>
         </u:properties>
       </u:Component>
-      <u:Component type="UnityEngine.MeshRenderer" id="0x00002A82">
+      <u:Component type="UnityEngine.MeshRenderer" id="0x00002A76">
         <u:extends>
           <u:superclass>UnityEngine.Renderer</u:superclass>
         </u:extends>
         <u:properties>
-          <u:property name="Cast Shadows" type="System.String" sp-type="Enum" sp-enum-index="1">On</u:property>
-          <u:property name="Receive Shadows" type="System.Boolean">True</u:property>
-          <u:property name="Dynamic Occludee" type="System.Boolean">True</u:property>
-          <u:property name="Motion Vectors" type="System.String" sp-type="Enum" sp-enum-index="1">Per Object Motion</u:property>
-          <u:property name="Light Probe Usage" type="System.Int32">1</u:property>
-          <u:property name="Reflection Probe Usage" type="System.Int32">1</u:property>
-          <u:property name="Rendering Layer Mask" type="System.Int32">1</u:property>
-          <u:property name="Renderer Priority" type="System.Int32">0</u:property>
-          <u:property-array name="Materials" type="System.Object[]" dimensions="1" length="1" sp-type="Generic">
-            <u:value name="Materials[0]" type="UnityEngine.Material" index="0">GroundMaterial (Instance) (Instance) (Instance) (Instance) (UnityEngine.Material)</u:value>
+          <u:property name="m_CastShadows" type="System.String" sp-name="Cast Shadows" sp-type="Enum" sp-enum-index="1">On</u:property>
+          <u:property name="m_ReceiveShadows" type="System.Boolean" sp-name="Receive Shadows">True</u:property>
+          <u:property name="m_DynamicOccludee" type="System.Boolean" sp-name="Dynamic Occludee">True</u:property>
+          <u:property name="m_MotionVectors" type="System.String" sp-name="Motion Vectors" sp-type="Enum" sp-enum-index="1">Per Object Motion</u:property>
+          <u:property name="m_LightProbeUsage" type="System.Int32" sp-name="Light Probe Usage">1</u:property>
+          <u:property name="m_ReflectionProbeUsage" type="System.Int32" sp-name="Reflection Probe Usage">1</u:property>
+          <u:property name="m_RenderingLayerMask" type="System.Int32" sp-name="Rendering Layer Mask">1</u:property>
+          <u:property name="m_RendererPriority" type="System.Int32" sp-name="Renderer Priority">0</u:property>
+          <u:property-array name="m_Materials" type="System.Object[]" dimensions="1" length="1" sp-name="Materials" sp-type="Generic">
+            <u:value name="m_Materials[0]" type="UnityEngine.Material" index="0">GroundMaterial (Instance) (Instance) (Instance) (Instance) (UnityEngine.Material)</u:value>
           </u:property-array>
         </u:properties>
       </u:Component>
-      <u:Component type="UnityEngine.MeshCollider" id="0x00002A80">
+      <u:Component type="UnityEngine.MeshCollider" id="0x00002A74">
         <u:extends>
           <u:superclass>UnityEngine.Collider</u:superclass>
         </u:extends>
         <u:properties>
-          <u:property name="Material" type="UnityEngine.PhysicMaterial" sp-type="ObjectReference" target-id="0x2ABA"> (Instance) (Instance) (Instance) (UnityEngine.PhysicMaterial)</u:property>
-          <u:property name="Is Trigger" type="System.Boolean">False</u:property>
-          <u:property name="Convex" type="System.Boolean">False</u:property>
-          <u:property name="Cooking Options" type="System.Int32">14</u:property>
-          <u:property name="Mesh" type="UnityEngine.Mesh" sp-type="ObjectReference" target-id="0x0256">Plane (UnityEngine.Mesh)</u:property>
+          <u:property name="m_Material" type="UnityEngine.PhysicMaterial" sp-name="Material" sp-type="ObjectReference" target-id="0x00002AAE"> (Instance) (Instance) (Instance) (UnityEngine.PhysicMaterial)</u:property>
+          <u:property name="m_IsTrigger" type="System.Boolean" sp-name="Is Trigger">False</u:property>
+          <u:property name="m_Convex" type="System.Boolean" sp-name="Convex">False</u:property>
+          <u:property name="m_CookingOptions" type="System.Int32" sp-name="Cooking Options">14</u:property>
+          <u:property name="m_Mesh" type="UnityEngine.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x00000256">Plane (UnityEngine.Mesh)</u:property>
         </u:properties>
       </u:Component>
     </u:components>
   </u:GameObject>
-  <u:GameObject name="CameraContainer" tag="Untagged" id="0x00002ABE" layer="0" activeInHierarchy="True" isStatic="False">
-    <u:Transform id="0x00002AC0">
+  <u:GameObject name="CameraContainer" tag="Untagged" id="0x00002AB2" layer="0" activeInHierarchy="True" isStatic="False">
+    <u:Transform id="0x00002AB4">
       <u:Vector3 name="position">
         <u:x>0</u:x>
         <u:y>1</u:y>
@@ -175,25 +179,25 @@
       </u:Vector3>
     </u:Transform>
     <u:components>
-      <u:MonoBehaviour type="pantherkitty.unity.scenedump.example.PointlessBehavior" id="0x00002AC2" enabled="True" isActiveAndEnabled="True">
+      <u:MonoBehaviour type="pantherkitty.unity.scenedump.example.PointlessBehavior" id="0x00002AB6" enabled="True" isActiveAndEnabled="True">
         <u:properties>
-          <u:property name="Is Boolean Arg" type="System.Boolean">True</u:property>
-          <u:property name="Int Member" type="System.Int32">69</u:property>
-          <u:property name="String Member" type="System.String">This is a public string member</u:property>
-          <u:property-array name="Simple String Array" type="System.Object[]" dimensions="1" length="3" sp-type="Generic">
-            <u:value name="Simple String Array[0]" type="System.String">one</u:value>
-            <u:value name="Simple String Array[1]" type="System.String">two</u:value>
-            <u:value name="Simple String Array[2]" type="System.String">three</u:value>
+          <u:property name="isBooleanArg" type="System.Boolean" sp-name="Is Boolean Arg">True</u:property>
+          <u:property name="intMember" type="System.Int32" sp-name="Int Member">69</u:property>
+          <u:property name="stringMember" type="System.String" sp-name="String Member">This is a public string member</u:property>
+          <u:property-array name="simpleStringArray" type="System.Object[]" dimensions="1" length="3" sp-name="Simple String Array" sp-type="Generic">
+            <u:value name="simpleStringArray[0]" type="System.String">one</u:value>
+            <u:value name="simpleStringArray[1]" type="System.String">two</u:value>
+            <u:value name="simpleStringArray[2]" type="System.String">three</u:value>
           </u:property-array>
-          <u:property name="Some Other Transform" type="UnityEngine.Transform" target-name="Directional Light" target-id="0x2A6A" sp-type="ObjectReference">Directional Light (UnityEngine.Transform)</u:property>
-          <u:property name="Some Game Object" type="UnityEngine.GameObject" target-name="Cube" target-id="0x2AA6" sp-type="ObjectReference" />
-          <u:property name="Our Main Camera" type="UnityEngine.Camera" target-name="Main Camera" target-id="0x2A70" sp-type="ObjectReference">Main Camera (UnityEngine.Camera)</u:property>
+          <u:property name="someOtherTransform" type="UnityEngine.Transform" target-name="Directional Light" target-id="0x00002A5E" sp-name="Some Other Transform" sp-type="ObjectReference">Directional Light (UnityEngine.Transform)</u:property>
+          <u:property name="someGameObject" type="UnityEngine.GameObject" target-name="Cube" target-id="0x00002A9A" sp-name="Some Game Object" sp-type="ObjectReference" />
+          <u:property name="ourMainCamera" type="UnityEngine.Camera" target-name="Main Camera" target-id="0x00002A64" sp-name="Our Main Camera" sp-type="ObjectReference">Main Camera (UnityEngine.Camera)</u:property>
         </u:properties>
       </u:MonoBehaviour>
     </u:components>
     <u:gameobjects>
-      <u:GameObject name="Main Camera" tag="MainCamera" id="0x00002A6C" layer="0" activeInHierarchy="True" isStatic="False">
-        <u:Transform id="0x00002A72">
+      <u:GameObject name="Main Camera" tag="MainCamera" id="0x00002A60" layer="0" activeInHierarchy="True" isStatic="False">
+        <u:Transform id="0x00002A66">
           <u:Vector3 name="position">
             <u:x>0</u:x>
             <u:y>1</u:y>
@@ -211,53 +215,54 @@
           </u:Vector3>
         </u:Transform>
         <u:components>
-          <u:Behaviour type="UnityEngine.Camera" id="0x00002A70" enabled="True" isActiveAndEnabled="True">
+          <u:Behaviour type="UnityEngine.Camera" id="0x00002A64" enabled="True" isActiveAndEnabled="True">
+            <u:referenced-by component-id="0x00002AB6" property-name="ourMainCamera">CameraContainer -» u:MonoBehaviour(pantherkitty.unity.scenedump.example.PointlessBehavior) •-» ourMainCamera</u:referenced-by>
             <u:properties>
-              <u:property name="Clear Flags" type="System.String" sp-type="Enum" sp-enum-index="0">Skybox</u:property>
-              <u:property name="Back Ground Color" type="UnityEngine.Color">
-                <u:Color name="Back Ground Color">
+              <u:property name="m_ClearFlags" type="System.String" sp-name="Clear Flags" sp-type="Enum" sp-enum-index="0">Skybox</u:property>
+              <u:property name="m_BackGroundColor" type="UnityEngine.Color" sp-name="Back Ground Color">
+                <u:Color name="m_BackGroundColor">
                   <u:r>0.1921569</u:r>
                   <u:g>0.3019608</u:g>
                   <u:b>0.4745098</u:b>
                   <u:a>0</u:a>
                 </u:Color>
               </u:property>
-              <u:property name="Projection Matrix Mode" type="System.Int32">1</u:property>
-              <u:property name="Sensor Size" type="UnityEngine.Vector2">
-                <u:Vector2 name="Sensor Size">
+              <u:property name="m_projectionMatrixMode" type="System.Int32" sp-name="Projection Matrix Mode">1</u:property>
+              <u:property name="m_SensorSize" type="UnityEngine.Vector2" sp-name="Sensor Size">
+                <u:Vector2 name="m_SensorSize">
                   <u:x>36</u:x>
                   <u:y>24</u:y>
                 </u:Vector2>
               </u:property>
-              <u:property name="Lens Shift" type="UnityEngine.Vector2">
-                <u:Vector2 name="Lens Shift">
+              <u:property name="m_LensShift" type="UnityEngine.Vector2" sp-name="Lens Shift">
+                <u:Vector2 name="m_LensShift">
                   <u:x>0</u:x>
                   <u:y>0</u:y>
                 </u:Vector2>
               </u:property>
-              <u:property name="Gate Fit Mode" type="System.Int32">2</u:property>
-              <u:property name="Focal Length" type="System.Single">50</u:property>
-              <u:property name="Normalized View Port Rect" type="UnityEngine.Rect">(x:0.00, y:0.00, width:1.00, height:1.00)</u:property>
-              <u:property name="Near clip plane" type="System.Single">0.3</u:property>
-              <u:property name="Far clip plane" type="System.Single">1000</u:property>
-              <u:property name="Field of view" type="System.Single">60</u:property>
-              <u:property name="Orthographic" type="System.Boolean">False</u:property>
-              <u:property name="Orthographic size" type="System.Single">5</u:property>
-              <u:property name="Depth" type="System.Single">-1</u:property>
-              <u:property name="Culling Mask" type="System.UInt32">FFFFFFFF</u:property>
-              <u:property name="Rendering Path" type="System.String" sp-type="Enum" sp-enum-index="0">Use Graphics Settings</u:property>
-              <u:property name="Target Display" type="System.Int32">0</u:property>
-              <u:property name="Target Eye" type="System.Int32">3</u:property>
-              <u:property name="HDR" type="System.Boolean">True</u:property>
-              <u:property name="Allow MSAA" type="System.Boolean">True</u:property>
-              <u:property name="Allow Dynamic Resolution" type="System.Boolean">False</u:property>
-              <u:property name="Force Into RT" type="System.Boolean">False</u:property>
-              <u:property name="Occlusion Culling" type="System.Boolean">True</u:property>
-              <u:property name="Stereo Convergence" type="System.Single">10</u:property>
-              <u:property name="Stereo Separation" type="System.Single">0.022</u:property>
+              <u:property name="m_GateFitMode" type="System.Int32" sp-name="Gate Fit Mode">2</u:property>
+              <u:property name="m_FocalLength" type="System.Single" sp-name="Focal Length">50</u:property>
+              <u:property name="m_NormalizedViewPortRect" type="UnityEngine.Rect" sp-name="Normalized View Port Rect">(x:0.00, y:0.00, width:1.00, height:1.00)</u:property>
+              <u:property name="near clip plane" type="System.Single" sp-name="Near clip plane">0.3</u:property>
+              <u:property name="far clip plane" type="System.Single" sp-name="Far clip plane">1000</u:property>
+              <u:property name="field of view" type="System.Single" sp-name="Field of view">60</u:property>
+              <u:property name="orthographic" type="System.Boolean" sp-name="Orthographic">False</u:property>
+              <u:property name="orthographic size" type="System.Single" sp-name="Orthographic size">5</u:property>
+              <u:property name="m_Depth" type="System.Single" sp-name="Depth">-1</u:property>
+              <u:property name="m_CullingMask" type="System.UInt32" sp-name="Culling Mask">FFFFFFFF</u:property>
+              <u:property name="m_RenderingPath" type="System.String" sp-name="Rendering Path" sp-type="Enum" sp-enum-index="0">Use Graphics Settings</u:property>
+              <u:property name="m_TargetDisplay" type="System.Int32" sp-name="Target Display">0</u:property>
+              <u:property name="m_TargetEye" type="System.Int32" sp-name="Target Eye">3</u:property>
+              <u:property name="m_HDR" type="System.Boolean" sp-name="HDR">True</u:property>
+              <u:property name="m_AllowMSAA" type="System.Boolean" sp-name="Allow MSAA">True</u:property>
+              <u:property name="m_AllowDynamicResolution" type="System.Boolean" sp-name="Allow Dynamic Resolution">False</u:property>
+              <u:property name="m_ForceIntoRT" type="System.Boolean" sp-name="Force Into RT">False</u:property>
+              <u:property name="m_OcclusionCulling" type="System.Boolean" sp-name="Occlusion Culling">True</u:property>
+              <u:property name="m_StereoConvergence" type="System.Single" sp-name="Stereo Convergence">10</u:property>
+              <u:property name="m_StereoSeparation" type="System.Single" sp-name="Stereo Separation">0.022</u:property>
             </u:properties>
           </u:Behaviour>
-          <u:Behaviour type="UnityEngine.AudioListener" id="0x00002A6E" enabled="True" isActiveAndEnabled="True">
+          <u:Behaviour type="UnityEngine.AudioListener" id="0x00002A62" enabled="True" isActiveAndEnabled="True">
             <u:extends>
               <u:superclass>UnityEngine.AudioBehaviour</u:superclass>
             </u:extends>
@@ -267,8 +272,8 @@
       </u:GameObject>
     </u:gameobjects>
   </u:GameObject>
-  <u:GameObject name="EventSystem" tag="Untagged" id="0x00002A88" layer="0" activeInHierarchy="True" isStatic="False">
-    <u:Transform id="0x00002A8E">
+  <u:GameObject name="EventSystem" tag="Untagged" id="0x00002A7C" layer="0" activeInHierarchy="True" isStatic="False">
+    <u:Transform id="0x00002A82">
       <u:Vector3 name="position">
         <u:x>0</u:x>
         <u:y>0</u:y>
@@ -286,35 +291,35 @@
       </u:Vector3>
     </u:Transform>
     <u:components>
-      <u:MonoBehaviour type="UnityEngine.EventSystems.EventSystem" id="0x00002A8C" enabled="True" isActiveAndEnabled="True">
+      <u:MonoBehaviour type="UnityEngine.EventSystems.EventSystem" id="0x00002A80" enabled="True" isActiveAndEnabled="True">
         <u:extends>
           <u:superclass>UnityEngine.EventSystems.UIBehaviour</u:superclass>
         </u:extends>
         <u:properties>
-          <u:property name="Send Navigation Events" type="System.Boolean">True</u:property>
-          <u:property name="Drag Threshold" type="System.Int32">10</u:property>
+          <u:property name="m_sendNavigationEvents" type="System.Boolean" sp-name="Send Navigation Events">True</u:property>
+          <u:property name="m_DragThreshold" type="System.Int32" sp-name="Drag Threshold">10</u:property>
         </u:properties>
       </u:MonoBehaviour>
-      <u:MonoBehaviour type="UnityEngine.EventSystems.StandaloneInputModule" id="0x00002A8A" enabled="True" isActiveAndEnabled="True">
+      <u:MonoBehaviour type="UnityEngine.EventSystems.StandaloneInputModule" id="0x00002A7E" enabled="True" isActiveAndEnabled="True">
         <u:extends>
           <u:superclass>UnityEngine.EventSystems.PointerInputModule</u:superclass>
           <u:superclass>UnityEngine.EventSystems.BaseInputModule</u:superclass>
           <u:superclass>UnityEngine.EventSystems.UIBehaviour</u:superclass>
         </u:extends>
         <u:properties>
-          <u:property name="Horizontal Axis" type="System.String">Horizontal</u:property>
-          <u:property name="Vertical Axis" type="System.String">Vertical</u:property>
-          <u:property name="Submit Button" type="System.String">Submit</u:property>
-          <u:property name="Cancel Button" type="System.String">Cancel</u:property>
-          <u:property name="Input Actions Per Second" type="System.Single">10</u:property>
-          <u:property name="Repeat Delay" type="System.Single">0.5</u:property>
-          <u:property name="Force Module Active" type="System.Boolean">False</u:property>
+          <u:property name="m_HorizontalAxis" type="System.String" sp-name="Horizontal Axis">Horizontal</u:property>
+          <u:property name="m_VerticalAxis" type="System.String" sp-name="Vertical Axis">Vertical</u:property>
+          <u:property name="m_SubmitButton" type="System.String" sp-name="Submit Button">Submit</u:property>
+          <u:property name="m_CancelButton" type="System.String" sp-name="Cancel Button">Cancel</u:property>
+          <u:property name="m_InputActionsPerSecond" type="System.Single" sp-name="Input Actions Per Second">10</u:property>
+          <u:property name="m_RepeatDelay" type="System.Single" sp-name="Repeat Delay">0.5</u:property>
+          <u:property name="m_ForceModuleActive" type="System.Boolean" sp-name="Force Module Active">False</u:property>
         </u:properties>
       </u:MonoBehaviour>
     </u:components>
   </u:GameObject>
-  <u:GameObject name="Canvas" tag="Untagged" id="0x00002AAE" layer="5" activeInHierarchy="True" isStatic="False">
-    <u:RectTransform id="0x00002AB6">
+  <u:GameObject name="Canvas" tag="Untagged" id="0x00002AA2" layer="5" activeInHierarchy="True" isStatic="False">
+    <u:RectTransform id="0x00002AAA">
       <u:Vector3 name="pos">
         <u:x>448.5</u:x>
         <u:y>302.5</u:y>
@@ -344,55 +349,55 @@
       </u:Vector3>
     </u:RectTransform>
     <u:components>
-      <u:Behaviour type="UnityEngine.Canvas" id="0x00002AB4" enabled="True" isActiveAndEnabled="True">
+      <u:Behaviour type="UnityEngine.Canvas" id="0x00002AA8" enabled="True" isActiveAndEnabled="True">
         <u:properties>
-          <u:property name="Render Mode" type="System.String" sp-type="Enum" sp-enum-index="0">Screen Space - Overlay</u:property>
-          <u:property name="Plane Distance" type="System.Single">100</u:property>
-          <u:property name="Pixel Perfect" type="System.Boolean">False</u:property>
-          <u:property name="Receives Events" type="System.Boolean">True</u:property>
-          <u:property name="Override Sorting" type="System.Boolean">False</u:property>
-          <u:property name="Override Pixel Perfect" type="System.Boolean">False</u:property>
-          <u:property name="Sorting Bucket Normalized Size" type="System.Single">0</u:property>
-          <u:property name="Additional Shader Channels Flag" type="System.String" sp-type="Enum" sp-enum-index="0">None</u:property>
+          <u:property name="m_RenderMode" type="System.String" sp-name="Render Mode" sp-type="Enum" sp-enum-index="0">Screen Space - Overlay</u:property>
+          <u:property name="m_PlaneDistance" type="System.Single" sp-name="Plane Distance">100</u:property>
+          <u:property name="m_PixelPerfect" type="System.Boolean" sp-name="Pixel Perfect">False</u:property>
+          <u:property name="m_ReceivesEvents" type="System.Boolean" sp-name="Receives Events">True</u:property>
+          <u:property name="m_OverrideSorting" type="System.Boolean" sp-name="Override Sorting">False</u:property>
+          <u:property name="m_OverridePixelPerfect" type="System.Boolean" sp-name="Override Pixel Perfect">False</u:property>
+          <u:property name="m_SortingBucketNormalizedSize" type="System.Single" sp-name="Sorting Bucket Normalized Size">0</u:property>
+          <u:property name="m_AdditionalShaderChannelsFlag" type="System.String" sp-name="Additional Shader Channels Flag" sp-type="Enum" sp-enum-index="0">None</u:property>
         </u:properties>
       </u:Behaviour>
-      <u:MonoBehaviour type="UnityEngine.UI.CanvasScaler" id="0x00002AB2" enabled="True" isActiveAndEnabled="True">
+      <u:MonoBehaviour type="UnityEngine.UI.CanvasScaler" id="0x00002AA6" enabled="True" isActiveAndEnabled="True">
         <u:extends>
           <u:superclass>UnityEngine.EventSystems.UIBehaviour</u:superclass>
         </u:extends>
         <u:properties>
-          <u:property name="Ui Scale Mode" type="System.String" sp-type="Enum" sp-enum-index="0">Constant Pixel Size</u:property>
-          <u:property name="Reference Pixels Per Unit" type="System.Single">100</u:property>
-          <u:property name="Scale Factor" type="System.Single">1</u:property>
-          <u:property name="Reference Resolution" type="UnityEngine.Vector2">
-            <u:Vector2 name="Reference Resolution">
+          <u:property name="m_UiScaleMode" type="System.String" sp-name="Ui Scale Mode" sp-type="Enum" sp-enum-index="0">Constant Pixel Size</u:property>
+          <u:property name="m_ReferencePixelsPerUnit" type="System.Single" sp-name="Reference Pixels Per Unit">100</u:property>
+          <u:property name="m_ScaleFactor" type="System.Single" sp-name="Scale Factor">1</u:property>
+          <u:property name="m_ReferenceResolution" type="UnityEngine.Vector2" sp-name="Reference Resolution">
+            <u:Vector2 name="m_ReferenceResolution">
               <u:x>800</u:x>
               <u:y>600</u:y>
             </u:Vector2>
           </u:property>
-          <u:property name="Screen Match Mode" type="System.String" sp-type="Enum" sp-enum-index="0">Match Width Or Height</u:property>
-          <u:property name="Match Width Or Height" type="System.Single">0</u:property>
-          <u:property name="Physical Unit" type="System.String" sp-type="Enum" sp-enum-index="3">Points</u:property>
-          <u:property name="Fallback Screen DPI" type="System.Single">96</u:property>
-          <u:property name="Default Sprite DPI" type="System.Single">96</u:property>
-          <u:property name="Dynamic Pixels Per Unit" type="System.Single">1</u:property>
+          <u:property name="m_ScreenMatchMode" type="System.String" sp-name="Screen Match Mode" sp-type="Enum" sp-enum-index="0">Match Width Or Height</u:property>
+          <u:property name="m_MatchWidthOrHeight" type="System.Single" sp-name="Match Width Or Height">0</u:property>
+          <u:property name="m_PhysicalUnit" type="System.String" sp-name="Physical Unit" sp-type="Enum" sp-enum-index="3">Points</u:property>
+          <u:property name="m_FallbackScreenDPI" type="System.Single" sp-name="Fallback Screen DPI">96</u:property>
+          <u:property name="m_DefaultSpriteDPI" type="System.Single" sp-name="Default Sprite DPI">96</u:property>
+          <u:property name="m_DynamicPixelsPerUnit" type="System.Single" sp-name="Dynamic Pixels Per Unit">1</u:property>
         </u:properties>
       </u:MonoBehaviour>
-      <u:MonoBehaviour type="UnityEngine.UI.GraphicRaycaster" id="0x00002AB0" enabled="True" isActiveAndEnabled="True">
+      <u:MonoBehaviour type="UnityEngine.UI.GraphicRaycaster" id="0x00002AA4" enabled="True" isActiveAndEnabled="True">
         <u:extends>
           <u:superclass>UnityEngine.EventSystems.BaseRaycaster</u:superclass>
           <u:superclass>UnityEngine.EventSystems.UIBehaviour</u:superclass>
         </u:extends>
         <u:properties>
-          <u:property name="Ignore Reversed Graphics" type="System.Boolean">True</u:property>
-          <u:property name="Blocking Objects" type="System.String" sp-type="Enum" sp-enum-index="0">None</u:property>
-          <u:property name="Blocking Mask" type="System.UInt32">FFFFFFFF</u:property>
+          <u:property name="m_IgnoreReversedGraphics" type="System.Boolean" sp-name="Ignore Reversed Graphics">True</u:property>
+          <u:property name="m_BlockingObjects" type="System.String" sp-name="Blocking Objects" sp-type="Enum" sp-enum-index="0">None</u:property>
+          <u:property name="m_BlockingMask" type="System.UInt32" sp-name="Blocking Mask">FFFFFFFF</u:property>
         </u:properties>
       </u:MonoBehaviour>
     </u:components>
     <u:gameobjects>
-      <u:GameObject name="Button" tag="Untagged" id="0x00002A90" layer="5" activeInHierarchy="True" isStatic="False">
-        <u:RectTransform id="0x00002A92">
+      <u:GameObject name="Button" tag="Untagged" id="0x00002A84" layer="5" activeInHierarchy="True" isStatic="False">
+        <u:RectTransform id="0x00002A86">
           <u:Vector3 name="pos">
             <u:x>0</u:x>
             <u:y>0</u:y>
@@ -422,12 +427,13 @@
           </u:Vector3>
         </u:RectTransform>
         <u:components>
-          <u:Component type="UnityEngine.CanvasRenderer" id="0x00002A98">
+          <u:Component type="UnityEngine.CanvasRenderer" id="0x00002A8C">
             <u:properties>
-              <u:property name="Cull Transparent Mesh" type="System.Boolean">False</u:property>
+              <u:property name="m_CullTransparentMesh" type="System.Boolean" sp-name="Cull Transparent Mesh">False</u:property>
             </u:properties>
           </u:Component>
-          <u:MonoBehaviour type="UnityEngine.UI.Image" id="0x00002A96" enabled="True" isActiveAndEnabled="True">
+          <u:MonoBehaviour type="UnityEngine.UI.Image" id="0x00002A8A" enabled="True" isActiveAndEnabled="True">
+            <u:referenced-by component-id="0x00002A88" property-name="m_TargetGraphic">Canvas -» Button -» u:MonoBehaviour(UnityEngine.UI.Button) •-» m_TargetGraphic</u:referenced-by>
             <u:extends>
               <u:superclass>UnityEngine.UI.MaskableGraphic</u:superclass>
               <u:superclass>UnityEngine.UI.Graphic</u:superclass>
@@ -443,28 +449,29 @@
               <u:interface>UnityEngine.UI.IMaskable</u:interface>
             </u:implements>
             <u:properties>
-              <u:property name="Color" type="UnityEngine.Color">
-                <u:Color name="Color">
+              <u:property name="m_Color" type="UnityEngine.Color" sp-name="Color">
+                <u:Color name="m_Color">
                   <u:r>1</u:r>
                   <u:g>1</u:g>
                   <u:b>1</u:b>
                   <u:a>1</u:a>
                 </u:Color>
               </u:property>
-              <u:property name="Raycast Target" type="System.Boolean">True</u:property>
-              <u:property name="On Cull State Changed" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
-              <u:property name="Sprite" type="UnityEngine.Sprite" sp-type="ObjectReference" target-id="0x02E2">UISprite (UnityEngine.Sprite)</u:property>
-              <u:property name="Type" type="System.String" sp-type="Enum" sp-enum-index="1">Sliced</u:property>
-              <u:property name="Preserve Aspect" type="System.Boolean">False</u:property>
-              <u:property name="Fill Center" type="System.Boolean">True</u:property>
-              <u:property name="Fill Method" type="System.String" sp-type="Enum" sp-enum-index="4">Radial 360</u:property>
-              <u:property name="Fill Amount" type="System.Single">1</u:property>
-              <u:property name="Fill Clockwise" type="System.Boolean">True</u:property>
-              <u:property name="Fill Origin" type="System.Int32">0</u:property>
-              <u:property name="Use Sprite Mesh" type="System.Boolean">False</u:property>
+              <u:property name="m_RaycastTarget" type="System.Boolean" sp-name="Raycast Target">True</u:property>
+              <u:property name="m_OnCullStateChanged" type="scenedump.UnknownType" sp-name="On Cull State Changed" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+              <u:property name="m_Sprite" type="UnityEngine.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x000002E2">UISprite (UnityEngine.Sprite)</u:property>
+              <u:property name="m_Type" type="System.String" sp-name="Type" sp-type="Enum" sp-enum-index="1">Sliced</u:property>
+              <u:property name="m_PreserveAspect" type="System.Boolean" sp-name="Preserve Aspect">False</u:property>
+              <u:property name="m_FillCenter" type="System.Boolean" sp-name="Fill Center">True</u:property>
+              <u:property name="m_FillMethod" type="System.String" sp-name="Fill Method" sp-type="Enum" sp-enum-index="4">Radial 360</u:property>
+              <u:property name="m_FillAmount" type="System.Single" sp-name="Fill Amount">1</u:property>
+              <u:property name="m_FillClockwise" type="System.Boolean" sp-name="Fill Clockwise">True</u:property>
+              <u:property name="m_FillOrigin" type="System.Int32" sp-name="Fill Origin">0</u:property>
+              <u:property name="m_UseSpriteMesh" type="System.Boolean" sp-name="Use Sprite Mesh">False</u:property>
             </u:properties>
           </u:MonoBehaviour>
-          <u:MonoBehaviour type="UnityEngine.UI.Button" id="0x00002A94" enabled="True" isActiveAndEnabled="True">
+          <u:MonoBehaviour type="UnityEngine.UI.Button" id="0x00002A88" enabled="True" isActiveAndEnabled="True">
+            <u:referenced-by component-id="0x00002A8E" property-name="theButton">Canvas -» Button -» u:MonoBehaviour(ButtonHandler) •-» theButton</u:referenced-by>
             <u:extends>
               <u:superclass>UnityEngine.UI.Selectable</u:superclass>
               <u:superclass>UnityEngine.EventSystems.UIBehaviour</u:superclass>
@@ -482,29 +489,29 @@
               <u:interface>UnityEngine.EventSystems.IPointerClickHandler</u:interface>
             </u:implements>
             <u:properties>
-              <u:property name="Navigation" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
-              <u:property name="Transition" type="System.String" sp-type="Enum" sp-enum-index="1">Color Tint</u:property>
-              <u:property name="Colors" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
-              <u:property name="Sprite State" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
-              <u:property name="Animation Triggers" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
-              <u:property name="Interactable" type="System.Boolean">True</u:property>
-              <u:property name="Target Graphic" type="UnityEngine.UI.Image" target-name="Button" target-id="0x2A96" sp-type="ObjectReference">Button (UnityEngine.UI.Image)</u:property>
-              <u:property name="On Click" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+              <u:property name="m_Navigation" type="scenedump.UnknownType" sp-name="Navigation" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+              <u:property name="m_Transition" type="System.String" sp-name="Transition" sp-type="Enum" sp-enum-index="1">Color Tint</u:property>
+              <u:property name="m_Colors" type="scenedump.UnknownType" sp-name="Colors" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+              <u:property name="m_SpriteState" type="scenedump.UnknownType" sp-name="Sprite State" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+              <u:property name="m_AnimationTriggers" type="scenedump.UnknownType" sp-name="Animation Triggers" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+              <u:property name="m_Interactable" type="System.Boolean" sp-name="Interactable">True</u:property>
+              <u:property name="m_TargetGraphic" type="UnityEngine.UI.Image" target-name="Button" target-id="0x00002A8A" sp-name="Target Graphic" sp-type="ObjectReference">Button (UnityEngine.UI.Image)</u:property>
+              <u:property name="m_OnClick" type="scenedump.UnknownType" sp-name="On Click" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
             </u:properties>
           </u:MonoBehaviour>
-          <u:MonoBehaviour type="ButtonHandler" id="0x00002A9A" enabled="True" isActiveAndEnabled="True">
+          <u:MonoBehaviour type="ButtonHandler" id="0x00002A8E" enabled="True" isActiveAndEnabled="True">
             <u:properties>
-              <u:property name="The Button" type="UnityEngine.UI.Button" target-name="Button" target-id="0x2A94" sp-type="ObjectReference">Button (UnityEngine.UI.Button)</u:property>
-              <u:property name="Sound" type="UnityEngine.AudioSource" target-name="Main" target-id="0x2A78" sp-type="ObjectReference">Main (UnityEngine.AudioSource)</u:property>
-              <u:property name="Red Material" type="UnityEngine.Material" sp-type="ObjectReference" target-id="0x292E">RedMaterial (UnityEngine.Material)</u:property>
-              <u:property name="Blue Material" type="UnityEngine.Material" sp-type="ObjectReference" target-id="0x2A12">BlueMaterial (UnityEngine.Material)</u:property>
-              <u:property name="Cube" type="UnityEngine.GameObject" target-name="Cube" target-id="0x2AA6" sp-type="ObjectReference" />
+              <u:property name="theButton" type="UnityEngine.UI.Button" target-name="Button" target-id="0x00002A88" sp-name="The Button" sp-type="ObjectReference">Button (UnityEngine.UI.Button)</u:property>
+              <u:property name="sound" type="UnityEngine.AudioSource" target-name="Main" target-id="0x00002A6C" sp-name="Sound" sp-type="ObjectReference">Main (UnityEngine.AudioSource)</u:property>
+              <u:property name="redMaterial" type="UnityEngine.Material" sp-name="Red Material" sp-type="ObjectReference" target-id="0x00002922">RedMaterial (UnityEngine.Material)</u:property>
+              <u:property name="blueMaterial" type="UnityEngine.Material" sp-name="Blue Material" sp-type="ObjectReference" target-id="0x00002A06">BlueMaterial (UnityEngine.Material)</u:property>
+              <u:property name="cube" type="UnityEngine.GameObject" target-name="Cube" target-id="0x00002A9A" sp-name="Cube" sp-type="ObjectReference" />
             </u:properties>
           </u:MonoBehaviour>
         </u:components>
         <u:gameobjects>
-          <u:GameObject name="Text" tag="Untagged" id="0x00002A9C" layer="5" activeInHierarchy="True" isStatic="False">
-            <u:RectTransform id="0x00002A9E">
+          <u:GameObject name="Text" tag="Untagged" id="0x00002A90" layer="5" activeInHierarchy="True" isStatic="False">
+            <u:RectTransform id="0x00002A92">
               <u:Vector3 name="pos">
                 <u:x>0</u:x>
                 <u:y>0</u:y>
@@ -534,12 +541,12 @@
               </u:Vector3>
             </u:RectTransform>
             <u:components>
-              <u:Component type="UnityEngine.CanvasRenderer" id="0x00002AA2">
+              <u:Component type="UnityEngine.CanvasRenderer" id="0x00002A96">
                 <u:properties>
-                  <u:property name="Cull Transparent Mesh" type="System.Boolean">False</u:property>
+                  <u:property name="m_CullTransparentMesh" type="System.Boolean" sp-name="Cull Transparent Mesh">False</u:property>
                 </u:properties>
               </u:Component>
-              <u:MonoBehaviour type="UnityEngine.UI.Text" id="0x00002AA0" enabled="True" isActiveAndEnabled="True">
+              <u:MonoBehaviour type="UnityEngine.UI.Text" id="0x00002A94" enabled="True" isActiveAndEnabled="True">
                 <u:extends>
                   <u:superclass>UnityEngine.UI.MaskableGraphic</u:superclass>
                   <u:superclass>UnityEngine.UI.Graphic</u:superclass>
@@ -553,18 +560,18 @@
                   <u:interface>UnityEngine.UI.IMaskable</u:interface>
                 </u:implements>
                 <u:properties>
-                  <u:property name="Color" type="UnityEngine.Color">
-                    <u:Color name="Color">
+                  <u:property name="m_Color" type="UnityEngine.Color" sp-name="Color">
+                    <u:Color name="m_Color">
                       <u:r>0.1960784</u:r>
                       <u:g>0.1960784</u:g>
                       <u:b>0.1960784</u:b>
                       <u:a>1</u:a>
                     </u:Color>
                   </u:property>
-                  <u:property name="Raycast Target" type="System.Boolean">True</u:property>
-                  <u:property name="On Cull State Changed" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
-                  <u:property name="Font Data" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
-                  <u:property name="Text" type="System.String">Click Me!</u:property>
+                  <u:property name="m_RaycastTarget" type="System.Boolean" sp-name="Raycast Target">True</u:property>
+                  <u:property name="m_OnCullStateChanged" type="scenedump.UnknownType" sp-name="On Cull State Changed" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+                  <u:property name="m_FontData" type="scenedump.UnknownType" sp-name="Font Data" sp-type="Generic">«@ToDo:unknown-type[Generic]»</u:property>
+                  <u:property name="m_Text" type="System.String" sp-name="Text">Click Me!</u:property>
                 </u:properties>
               </u:MonoBehaviour>
             </u:components>
@@ -573,8 +580,8 @@
       </u:GameObject>
     </u:gameobjects>
   </u:GameObject>
-  <u:GameObject name="Main" tag="Untagged" id="0x00002A76" layer="0" activeInHierarchy="True" isStatic="False">
-    <u:Transform id="0x00002A7A">
+  <u:GameObject name="Main" tag="Untagged" id="0x00002A6A" layer="0" activeInHierarchy="True" isStatic="False">
+    <u:Transform id="0x00002A6E">
       <u:Vector3 name="position">
         <u:x>9.82568</u:x>
         <u:y>8.074826</u:y>
@@ -592,39 +599,122 @@
       </u:Vector3>
     </u:Transform>
     <u:components>
-      <u:Behaviour type="UnityEngine.AudioSource" id="0x00002A78" enabled="True" isActiveAndEnabled="True">
+      <u:Behaviour type="UnityEngine.AudioSource" id="0x00002A6C" enabled="True" isActiveAndEnabled="True">
+        <u:referenced-by component-id="0x00002A8E" property-name="sound">Canvas -» Button -» u:MonoBehaviour(ButtonHandler) •-» sound</u:referenced-by>
         <u:extends>
           <u:superclass>UnityEngine.AudioBehaviour</u:superclass>
         </u:extends>
         <u:properties>
-          <u:property name="Audio Clip" type="UnityEngine.AudioClip" sp-type="ObjectReference" target-id="0x28C0">beep-08 (UnityEngine.AudioClip)</u:property>
-          <u:property name="Play On Awake" type="System.Boolean">False</u:property>
-          <u:property name="Volume" type="System.Single">1</u:property>
-          <u:property name="Pitch" type="System.Single">1</u:property>
-          <u:property name="Loop" type="System.Boolean">False</u:property>
-          <u:property name="Mute" type="System.Boolean">False</u:property>
-          <u:property name="Spatialize" type="System.Boolean">False</u:property>
-          <u:property name="Spatialize Post Effects" type="System.Boolean">False</u:property>
-          <u:property name="Priority" type="System.Int32">128</u:property>
-          <u:property name="Doppler Level" type="System.Single">1</u:property>
-          <u:property name="Min Distance" type="System.Single">1</u:property>
-          <u:property name="Max Distance" type="System.Single">500</u:property>
-          <u:property name="Pan 2D" type="System.Single">0</u:property>
-          <u:property name="Rolloff Mode" type="System.String" sp-type="Enum" sp-enum-index="0">Logarithmic Rolloff</u:property>
-          <u:property name="Bypass Effects" type="System.Boolean">False</u:property>
-          <u:property name="Bypass Listener Effects" type="System.Boolean">False</u:property>
-          <u:property name="Bypass Reverb Zones" type="System.Boolean">False</u:property>
-          <u:property name="Rolloff Custom Curve" type="UnityEngine.AnimationCurve">UnityEngine.AnimationCurve</u:property>
-          <u:property name="Pan Level Custom Curve" type="UnityEngine.AnimationCurve">UnityEngine.AnimationCurve</u:property>
-          <u:property name="Spread Custom Curve" type="UnityEngine.AnimationCurve">UnityEngine.AnimationCurve</u:property>
-          <u:property name="Reverb Zone Mix Custom Curve" type="UnityEngine.AnimationCurve">UnityEngine.AnimationCurve</u:property>
+          <u:property name="m_audioClip" type="UnityEngine.AudioClip" sp-name="Audio Clip" sp-type="ObjectReference" target-id="0x000028B4">beep-08 (UnityEngine.AudioClip)</u:property>
+          <u:property name="m_PlayOnAwake" type="System.Boolean" sp-name="Play On Awake">False</u:property>
+          <u:property name="m_Volume" type="System.Single" sp-name="Volume">1</u:property>
+          <u:property name="m_Pitch" type="System.Single" sp-name="Pitch">1</u:property>
+          <u:property name="Loop" type="System.Boolean" sp-name="Loop">False</u:property>
+          <u:property name="Mute" type="System.Boolean" sp-name="Mute">False</u:property>
+          <u:property name="Spatialize" type="System.Boolean" sp-name="Spatialize">False</u:property>
+          <u:property name="SpatializePostEffects" type="System.Boolean" sp-name="Spatialize Post Effects">False</u:property>
+          <u:property name="Priority" type="System.Int32" sp-name="Priority">128</u:property>
+          <u:property name="DopplerLevel" type="System.Single" sp-name="Doppler Level">1</u:property>
+          <u:property name="MinDistance" type="System.Single" sp-name="Min Distance">1</u:property>
+          <u:property name="MaxDistance" type="System.Single" sp-name="Max Distance">500</u:property>
+          <u:property name="Pan2D" type="System.Single" sp-name="Pan 2D">0</u:property>
+          <u:property name="rolloffMode" type="System.String" sp-name="Rolloff Mode" sp-type="Enum" sp-enum-index="0">Logarithmic Rolloff</u:property>
+          <u:property name="BypassEffects" type="System.Boolean" sp-name="Bypass Effects">False</u:property>
+          <u:property name="BypassListenerEffects" type="System.Boolean" sp-name="Bypass Listener Effects">False</u:property>
+          <u:property name="BypassReverbZones" type="System.Boolean" sp-name="Bypass Reverb Zones">False</u:property>
+          <u:property name="rolloffCustomCurve" type="UnityEngine.AnimationCurve" sp-name="Rolloff Custom Curve">UnityEngine.AnimationCurve</u:property>
+          <u:property name="panLevelCustomCurve" type="UnityEngine.AnimationCurve" sp-name="Pan Level Custom Curve">UnityEngine.AnimationCurve</u:property>
+          <u:property name="spreadCustomCurve" type="UnityEngine.AnimationCurve" sp-name="Spread Custom Curve">UnityEngine.AnimationCurve</u:property>
+          <u:property name="reverbZoneMixCustomCurve" type="UnityEngine.AnimationCurve" sp-name="Reverb Zone Mix Custom Curve">UnityEngine.AnimationCurve</u:property>
         </u:properties>
       </u:Behaviour>
-      <u:MonoBehaviour type="CubeRotator" id="0x00002A7C" enabled="True" isActiveAndEnabled="True">
+      <u:MonoBehaviour type="CubeRotator" id="0x00002A70" enabled="True" isActiveAndEnabled="True">
         <u:properties>
-          <u:property name="Cube" type="UnityEngine.GameObject" target-name="Cube" target-id="0x2AA6" sp-type="ObjectReference" />
+          <u:property name="cube" type="UnityEngine.GameObject" target-name="Cube" target-id="0x00002A9A" sp-name="Cube" sp-type="ObjectReference" />
         </u:properties>
       </u:MonoBehaviour>
     </u:components>
   </u:GameObject>
+  <u:GameObject name="SpherePrefab" tag="Player" id="0xFFFFFA3A" layer="9" activeInHierarchy="True" isStatic="False" prefab="Regular">
+    <u:Transform id="0xFFFFFA38">
+      <u:Vector3 name="position">
+        <u:x>9.82568</u:x>
+        <u:y>8.074826</u:y>
+        <u:z>-24.7313</u:z>
+      </u:Vector3>
+      <u:Vector3 name="rotation">
+        <u:x>0</u:x>
+        <u:y>0</u:y>
+        <u:z>0</u:z>
+      </u:Vector3>
+      <u:Vector3 name="scale">
+        <u:x>1</u:x>
+        <u:y>1</u:y>
+        <u:z>1</u:z>
+      </u:Vector3>
+    </u:Transform>
+    <u:gameobjects>
+      <u:GameObject name="Sphere" tag="Untagged" id="0xFFFFFA36" layer="0" activeInHierarchy="True" isStatic="False" prefab="Regular">
+        <u:Transform id="0xFFFFFA34">
+          <u:Vector3 name="position">
+            <u:x>9.82568</u:x>
+            <u:y>8.074826</u:y>
+            <u:z>-24.7313</u:z>
+          </u:Vector3>
+          <u:Vector3 name="rotation">
+            <u:x>0</u:x>
+            <u:y>0</u:y>
+            <u:z>0</u:z>
+          </u:Vector3>
+          <u:Vector3 name="scale">
+            <u:x>1</u:x>
+            <u:y>1</u:y>
+            <u:z>1</u:z>
+          </u:Vector3>
+        </u:Transform>
+        <u:components>
+          <u:Component type="UnityEngine.MeshFilter" id="0xFFFFFA32" prefab="Regular">
+            <u:properties>
+              <u:property name="m_Mesh" type="UnityEngine.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x00000252">Sphere (UnityEngine.Mesh)</u:property>
+            </u:properties>
+          </u:Component>
+          <u:Component type="UnityEngine.MeshRenderer" id="0xFFFFFA30" prefab="Regular">
+            <u:extends>
+              <u:superclass>UnityEngine.Renderer</u:superclass>
+            </u:extends>
+            <u:properties>
+              <u:property name="m_CastShadows" type="System.String" sp-name="Cast Shadows" sp-type="Enum" sp-enum-index="1">On</u:property>
+              <u:property name="m_ReceiveShadows" type="System.Boolean" sp-name="Receive Shadows">True</u:property>
+              <u:property name="m_DynamicOccludee" type="System.Boolean" sp-name="Dynamic Occludee">True</u:property>
+              <u:property name="m_MotionVectors" type="System.String" sp-name="Motion Vectors" sp-type="Enum" sp-enum-index="1">Per Object Motion</u:property>
+              <u:property name="m_LightProbeUsage" type="System.Int32" sp-name="Light Probe Usage">1</u:property>
+              <u:property name="m_ReflectionProbeUsage" type="System.Int32" sp-name="Reflection Probe Usage">1</u:property>
+              <u:property name="m_RenderingLayerMask" type="System.Int32" sp-name="Rendering Layer Mask">1</u:property>
+              <u:property name="m_RendererPriority" type="System.Int32" sp-name="Renderer Priority">0</u:property>
+              <u:property-array name="m_Materials" type="System.Object[]" dimensions="1" length="1" sp-name="Materials" sp-type="Generic">
+                <u:value name="m_Materials[0]" type="UnityEngine.Material" index="0">Default-Material (UnityEngine.Material)</u:value>
+              </u:property-array>
+            </u:properties>
+          </u:Component>
+          <u:Component type="UnityEngine.SphereCollider" id="0xFFFFFA2E" prefab="Regular">
+            <u:extends>
+              <u:superclass>UnityEngine.Collider</u:superclass>
+            </u:extends>
+            <u:properties>
+              <u:property name="m_IsTrigger" type="System.Boolean" sp-name="Is Trigger">False</u:property>
+              <u:property name="m_Radius" type="System.Single" sp-name="Radius">0.5</u:property>
+              <u:property name="m_Center" type="UnityEngine.Vector3" sp-name="Center">
+                <u:Vector3 name="m_Center">
+                  <u:x>0</u:x>
+                  <u:y>0</u:y>
+                  <u:z>0</u:z>
+                </u:Vector3>
+              </u:property>
+            </u:properties>
+          </u:Component>
+        </u:components>
+      </u:GameObject>
+    </u:gameobjects>
+  </u:GameObject>
+  <u:references />
 </u:Scene>

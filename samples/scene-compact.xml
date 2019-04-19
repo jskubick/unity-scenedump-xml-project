@@ -8,203 +8,210 @@
     <type-abbreviation before="UnityEngine." after="µ." />
     <type-abbreviation before="System." after="§." />
   </meta>
-  <GameObject name="Directional Light" id="0x00002A66" layer="0" activeInHierarchy="True" isStatic="False">
-    <Transform id="0x00002A6A" position="(0.0, 3.0, 0.0)" rotation="(50.0, 330.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
+  <GameObject name="Directional Light" id="0x00002A5A" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x00002A5E" position="(0.0, 3.0, 0.0)" rotation="(50.0, 330.0, 0.0)" scale="(1.0, 1.0, 1.0)">
+      <referenced-by component-id="0x00002AB6" property-name="someOtherTransform">CameraContainer -» MonoBehaviour(pantherkitty.unity.scenedump.example.PointlessBehavior) •-» someOtherTransform</referenced-by>
+    </Transform>
     <components>
-      <Behaviour type="µ.Light" id="0x00002A68" enabled="True" isActiveAndEnabled="True">
-        <property name="Type" type="§.String" sp-type="Enum" sp-enum-index="1">Directional</property>
-        <property name="Color" type="µ.Color" Color="RGBA(1.000, 0.957, 0.839, 1.000)" />
-        <property name="Intensity" type="§.Single">1</property>
-        <property name="Range" type="§.Single">10</property>
-        <property name="Spot Angle" type="§.Single">30</property>
-        <property name="Cookie Size" type="§.Single">10</property>
-        <property name="Shadows" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
-        <property name="Draw Halo" type="§.Boolean">False</property>
-        <property name="Baking Output" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
-        <property name="Render Mode" type="§.String" sp-type="Enum" sp-enum-index="0">Auto</property>
-        <property name="Culling Mask" type="§.UInt32">FFFFFFFF</property>
-        <property name="Lightmapping" type="§.String" sp-type="Enum" sp-enum-index="0">Mixed</property>
-        <property name="Light Shadow Caster Mode" type="§.Int32">0</property>
-        <property name="Area Size" type="µ.Vector2" Area_Size="(1.0, 1.0)" />
-        <property name="Bounce Intensity" type="§.Single">1</property>
-        <property name="Color Temperature" type="§.Single">6570</property>
-        <property name="Use Color Temperature" type="§.Boolean">False</property>
-        <property name="Shadow Radius" type="§.Single">0</property>
-        <property name="Shadow Angle" type="§.Single">0</property>
+      <Behaviour type="µ.Light" id="0x00002A5C" enabled="True" isActiveAndEnabled="True">
+        <property name="m_Type" type="§.String" sp-name="Type" sp-type="Enum" sp-enum-index="1">Directional</property>
+        <property name="m_Color" type="µ.Color" m_Color="RGBA(1.000, 0.957, 0.839, 1.000)" sp-name="Color" />
+        <property name="m_Intensity" type="§.Single" sp-name="Intensity">1</property>
+        <property name="m_Range" type="§.Single" sp-name="Range">10</property>
+        <property name="m_SpotAngle" type="§.Single" sp-name="Spot Angle">30</property>
+        <property name="m_CookieSize" type="§.Single" sp-name="Cookie Size">10</property>
+        <property name="m_Shadows" type="scenedump.UnknownType" sp-name="Shadows" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
+        <property name="m_DrawHalo" type="§.Boolean" sp-name="Draw Halo">False</property>
+        <property name="m_BakingOutput" type="scenedump.UnknownType" sp-name="Baking Output" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
+        <property name="m_RenderMode" type="§.String" sp-name="Render Mode" sp-type="Enum" sp-enum-index="0">Auto</property>
+        <property name="m_CullingMask" type="§.UInt32" sp-name="Culling Mask">FFFFFFFF</property>
+        <property name="m_Lightmapping" type="§.String" sp-name="Lightmapping" sp-type="Enum" sp-enum-index="0">Mixed</property>
+        <property name="m_LightShadowCasterMode" type="§.Int32" sp-name="Light Shadow Caster Mode">0</property>
+        <property name="m_AreaSize" type="µ.Vector2" m_AreaSize="(1.0, 1.0)" sp-name="Area Size" />
+        <property name="m_BounceIntensity" type="§.Single" sp-name="Bounce Intensity">1</property>
+        <property name="m_ColorTemperature" type="§.Single" sp-name="Color Temperature">6570</property>
+        <property name="m_UseColorTemperature" type="§.Boolean" sp-name="Use Color Temperature">False</property>
+        <property name="m_ShadowRadius" type="§.Single" sp-name="Shadow Radius">0</property>
+        <property name="m_ShadowAngle" type="§.Single" sp-name="Shadow Angle">0</property>
       </Behaviour>
     </components>
   </GameObject>
-  <GameObject name="Cube" id="0x00002AA6" layer="0" activeInHierarchy="True" isStatic="False">
-    <Transform id="0x00002AAC" position="(0.0, 3.0, 0.0)" rotation="(45.0, 45.0, 45.0)" scale="(1.0, 1.0, 1.0)" />
+  <GameObject name="Cube" id="0x00002A9A" layer="0" activeInHierarchy="True" isStatic="False">
+    <referenced-by component-id="0x00002A70" property-name="cube">Main -» MonoBehaviour(CubeRotator) •-» cube</referenced-by>
+    <referenced-by component-id="0x00002A8E" property-name="cube">Canvas -» Button -» MonoBehaviour(ButtonHandler) •-» cube</referenced-by>
+    <referenced-by component-id="0x00002AB6" property-name="someGameObject">CameraContainer -» MonoBehaviour(pantherkitty.unity.scenedump.example.PointlessBehavior) •-» someGameObject</referenced-by>
+    <Transform id="0x00002AA0" position="(0.0, 3.0, 0.0)" rotation="(45.0, 45.0, 45.0)" scale="(1.0, 1.0, 1.0)" />
     <components>
-      <Component type="µ.MeshFilter" id="0x00002AAA">
-        <property name="Mesh" type="µ.Mesh" sp-type="ObjectReference" target-id="0x2ABC">Cube ¡ ¡ ¡ ¡ (µ.Mesh)</property>
+      <Component type="µ.MeshFilter" id="0x00002A9E">
+        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x00002AB0">Cube ¡ ¡ ¡ ¡ (µ.Mesh)</property>
       </Component>
-      <Component type="µ.MeshRenderer" id="0x00002AA8">
+      <Component type="µ.MeshRenderer" id="0x00002A9C">
         <extends>µ.Renderer</extends>
-        <property name="Cast Shadows" type="§.String" sp-type="Enum" sp-enum-index="1">On</property>
-        <property name="Receive Shadows" type="§.Boolean">True</property>
-        <property name="Dynamic Occludee" type="§.Boolean">True</property>
-        <property name="Motion Vectors" type="§.String" sp-type="Enum" sp-enum-index="1">Per Object Motion</property>
-        <property name="Light Probe Usage" type="§.Int32">1</property>
-        <property name="Reflection Probe Usage" type="§.Int32">1</property>
-        <property name="Rendering Layer Mask" type="§.Int32">1</property>
-        <property name="Renderer Priority" type="§.Int32">0</property>
-        <property-array name="Materials" type="§.Object[]" dimensions="1" length="1" sp-type="Generic">
-          <value name="Materials[0]" type="µ.Material" index="0">RedMaterial (¡) (¡) (¡) (¡) (µ.Material)</value>
+        <property name="m_CastShadows" type="§.String" sp-name="Cast Shadows" sp-type="Enum" sp-enum-index="1">On</property>
+        <property name="m_ReceiveShadows" type="§.Boolean" sp-name="Receive Shadows">True</property>
+        <property name="m_DynamicOccludee" type="§.Boolean" sp-name="Dynamic Occludee">True</property>
+        <property name="m_MotionVectors" type="§.String" sp-name="Motion Vectors" sp-type="Enum" sp-enum-index="1">Per Object Motion</property>
+        <property name="m_LightProbeUsage" type="§.Int32" sp-name="Light Probe Usage">1</property>
+        <property name="m_ReflectionProbeUsage" type="§.Int32" sp-name="Reflection Probe Usage">1</property>
+        <property name="m_RenderingLayerMask" type="§.Int32" sp-name="Rendering Layer Mask">1</property>
+        <property name="m_RendererPriority" type="§.Int32" sp-name="Renderer Priority">0</property>
+        <property-array name="m_Materials" type="§.Object[]" dimensions="1" length="1" sp-name="Materials" sp-type="Generic">
+          <value name="m_Materials[0]" type="µ.Material" index="0">RedMaterial (¡) (¡) (¡) (¡) (µ.Material)</value>
         </property-array>
       </Component>
     </components>
   </GameObject>
-  <GameObject name="Plane" id="0x00002A7E" layer="0" activeInHierarchy="True" isStatic="False">
-    <Transform id="0x00002A86" position="(0.0, 0.0, 0.0)" rotation="(0.0, 0.0, 0.0)" scale="(10.0, 1.0, 10.0)" />
+  <GameObject name="Plane" id="0x00002A72" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x00002A7A" position="(0.0, 0.0, 0.0)" rotation="(0.0, 0.0, 0.0)" scale="(10.0, 1.0, 10.0)" />
     <components>
-      <Component type="µ.MeshFilter" id="0x00002A84">
-        <property name="Mesh" type="µ.Mesh" sp-type="ObjectReference" target-id="0x2A74">Plane ¡ ¡ ¡ ¡ (µ.Mesh)</property>
+      <Component type="µ.MeshFilter" id="0x00002A78">
+        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x00002A68">Plane ¡ ¡ ¡ ¡ (µ.Mesh)</property>
       </Component>
-      <Component type="µ.MeshRenderer" id="0x00002A82">
+      <Component type="µ.MeshRenderer" id="0x00002A76">
         <extends>µ.Renderer</extends>
-        <property name="Cast Shadows" type="§.String" sp-type="Enum" sp-enum-index="1">On</property>
-        <property name="Receive Shadows" type="§.Boolean">True</property>
-        <property name="Dynamic Occludee" type="§.Boolean">True</property>
-        <property name="Motion Vectors" type="§.String" sp-type="Enum" sp-enum-index="1">Per Object Motion</property>
-        <property name="Light Probe Usage" type="§.Int32">1</property>
-        <property name="Reflection Probe Usage" type="§.Int32">1</property>
-        <property name="Rendering Layer Mask" type="§.Int32">1</property>
-        <property name="Renderer Priority" type="§.Int32">0</property>
-        <property-array name="Materials" type="§.Object[]" dimensions="1" length="1" sp-type="Generic">
-          <value name="Materials[0]" type="µ.Material" index="0">GroundMaterial (¡) (¡) (¡) (¡) (µ.Material)</value>
+        <property name="m_CastShadows" type="§.String" sp-name="Cast Shadows" sp-type="Enum" sp-enum-index="1">On</property>
+        <property name="m_ReceiveShadows" type="§.Boolean" sp-name="Receive Shadows">True</property>
+        <property name="m_DynamicOccludee" type="§.Boolean" sp-name="Dynamic Occludee">True</property>
+        <property name="m_MotionVectors" type="§.String" sp-name="Motion Vectors" sp-type="Enum" sp-enum-index="1">Per Object Motion</property>
+        <property name="m_LightProbeUsage" type="§.Int32" sp-name="Light Probe Usage">1</property>
+        <property name="m_ReflectionProbeUsage" type="§.Int32" sp-name="Reflection Probe Usage">1</property>
+        <property name="m_RenderingLayerMask" type="§.Int32" sp-name="Rendering Layer Mask">1</property>
+        <property name="m_RendererPriority" type="§.Int32" sp-name="Renderer Priority">0</property>
+        <property-array name="m_Materials" type="§.Object[]" dimensions="1" length="1" sp-name="Materials" sp-type="Generic">
+          <value name="m_Materials[0]" type="µ.Material" index="0">GroundMaterial (¡) (¡) (¡) (¡) (µ.Material)</value>
         </property-array>
       </Component>
-      <Component type="µ.MeshCollider" id="0x00002A80">
+      <Component type="µ.MeshCollider" id="0x00002A74">
         <extends>µ.Collider</extends>
-        <property name="Material" type="µ.PhysicMaterial" sp-type="ObjectReference" target-id="0x2ABA"> (¡) (¡) (¡) (µ.PhysicMaterial)</property>
-        <property name="Is Trigger" type="§.Boolean">False</property>
-        <property name="Convex" type="§.Boolean">False</property>
-        <property name="Cooking Options" type="§.Int32">14</property>
-        <property name="Mesh" type="µ.Mesh" sp-type="ObjectReference" target-id="0x0256">Plane (µ.Mesh)</property>
+        <property name="m_Material" type="µ.PhysicMaterial" sp-name="Material" sp-type="ObjectReference" target-id="0x00002AAE"> (¡) (¡) (¡) (µ.PhysicMaterial)</property>
+        <property name="m_IsTrigger" type="§.Boolean" sp-name="Is Trigger">False</property>
+        <property name="m_Convex" type="§.Boolean" sp-name="Convex">False</property>
+        <property name="m_CookingOptions" type="§.Int32" sp-name="Cooking Options">14</property>
+        <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x00000256">Plane (µ.Mesh)</property>
       </Component>
     </components>
   </GameObject>
-  <GameObject name="CameraContainer" id="0x00002ABE" layer="0" activeInHierarchy="True" isStatic="False">
-    <Transform id="0x00002AC0" position="(0.0, 1.0, 0.0)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
+  <GameObject name="CameraContainer" id="0x00002AB2" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x00002AB4" position="(0.0, 1.0, 0.0)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
     <components>
-      <MonoBehaviour type="pantherkitty.unity.scenedump.example.PointlessBehavior" id="0x00002AC2" enabled="True" isActiveAndEnabled="True">
-        <property name="Is Boolean Arg" type="§.Boolean">True</property>
-        <property name="Int Member" type="§.Int32">69</property>
-        <property name="String Member" type="§.String">This is a public string member</property>
-        <property-array name="Simple String Array" type="§.Object[]" dimensions="1" length="3" sp-type="Generic">
-          <value name="Simple String Array[0]" type="§.String">one</value>
-          <value name="Simple String Array[1]" type="§.String">two</value>
-          <value name="Simple String Array[2]" type="§.String">three</value>
+      <MonoBehaviour type="pantherkitty.unity.scenedump.example.PointlessBehavior" id="0x00002AB6" enabled="True" isActiveAndEnabled="True">
+        <property name="isBooleanArg" type="§.Boolean" sp-name="Is Boolean Arg">True</property>
+        <property name="intMember" type="§.Int32" sp-name="Int Member">69</property>
+        <property name="stringMember" type="§.String" sp-name="String Member">This is a public string member</property>
+        <property-array name="simpleStringArray" type="§.Object[]" dimensions="1" length="3" sp-name="Simple String Array" sp-type="Generic">
+          <value name="simpleStringArray[0]" type="§.String">one</value>
+          <value name="simpleStringArray[1]" type="§.String">two</value>
+          <value name="simpleStringArray[2]" type="§.String">three</value>
         </property-array>
-        <property name="Some Other Transform" type="µ.Transform" target-name="Directional Light" target-id="0x2A6A" sp-type="ObjectReference">Directional Light (µ.Transform)</property>
-        <property name="Some Game Object" type="µ.GameObject" target-name="Cube" target-id="0x2AA6" sp-type="ObjectReference" />
-        <property name="Our Main Camera" type="µ.Camera" target-name="Main Camera" target-id="0x2A70" sp-type="ObjectReference">Main Camera (µ.Camera)</property>
+        <property name="someOtherTransform" type="µ.Transform" target-name="Directional Light" target-id="0x00002A5E" sp-name="Some Other Transform" sp-type="ObjectReference">Directional Light (µ.Transform)</property>
+        <property name="someGameObject" type="µ.GameObject" target-name="Cube" target-id="0x00002A9A" sp-name="Some Game Object" sp-type="ObjectReference" />
+        <property name="ourMainCamera" type="µ.Camera" target-name="Main Camera" target-id="0x00002A64" sp-name="Our Main Camera" sp-type="ObjectReference">Main Camera (µ.Camera)</property>
       </MonoBehaviour>
     </components>
     <gameobjects>
-      <GameObject name="Main Camera" tag="MainCamera" id="0x00002A6C" layer="0" activeInHierarchy="True" isStatic="False">
-        <Transform id="0x00002A72" position="(0.0, 1.0, -10.0)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
+      <GameObject name="Main Camera" tag="MainCamera" id="0x00002A60" layer="0" activeInHierarchy="True" isStatic="False">
+        <Transform id="0x00002A66" position="(0.0, 1.0, -10.0)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
         <components>
-          <Behaviour type="µ.Camera" id="0x00002A70" enabled="True" isActiveAndEnabled="True">
-            <property name="Clear Flags" type="§.String" sp-type="Enum" sp-enum-index="0">Skybox</property>
-            <property name="Back Ground Color" type="µ.Color" Back_Ground_Color="RGBA(0.192, 0.302, 0.475, 0.000)" />
-            <property name="Projection Matrix Mode" type="§.Int32">1</property>
-            <property name="Sensor Size" type="µ.Vector2" Sensor_Size="(36.0, 24.0)" />
-            <property name="Lens Shift" type="µ.Vector2" Lens_Shift="(0.0, 0.0)" />
-            <property name="Gate Fit Mode" type="§.Int32">2</property>
-            <property name="Focal Length" type="§.Single">50</property>
-            <property name="Normalized View Port Rect" type="µ.Rect">(x:0.00, y:0.00, width:1.00, height:1.00)</property>
-            <property name="Near clip plane" type="§.Single">0.3</property>
-            <property name="Far clip plane" type="§.Single">1000</property>
-            <property name="Field of view" type="§.Single">60</property>
-            <property name="Orthographic" type="§.Boolean">False</property>
-            <property name="Orthographic size" type="§.Single">5</property>
-            <property name="Depth" type="§.Single">-1</property>
-            <property name="Culling Mask" type="§.UInt32">FFFFFFFF</property>
-            <property name="Rendering Path" type="§.String" sp-type="Enum" sp-enum-index="0">Use Graphics Settings</property>
-            <property name="Target Display" type="§.Int32">0</property>
-            <property name="Target Eye" type="§.Int32">3</property>
-            <property name="HDR" type="§.Boolean">True</property>
-            <property name="Allow MSAA" type="§.Boolean">True</property>
-            <property name="Allow Dynamic Resolution" type="§.Boolean">False</property>
-            <property name="Force Into RT" type="§.Boolean">False</property>
-            <property name="Occlusion Culling" type="§.Boolean">True</property>
-            <property name="Stereo Convergence" type="§.Single">10</property>
-            <property name="Stereo Separation" type="§.Single">0.022</property>
+          <Behaviour type="µ.Camera" id="0x00002A64" enabled="True" isActiveAndEnabled="True">
+            <referenced-by component-id="0x00002AB6" property-name="ourMainCamera">CameraContainer -» MonoBehaviour(pantherkitty.unity.scenedump.example.PointlessBehavior) •-» ourMainCamera</referenced-by>
+            <property name="m_ClearFlags" type="§.String" sp-name="Clear Flags" sp-type="Enum" sp-enum-index="0">Skybox</property>
+            <property name="m_BackGroundColor" type="µ.Color" m_BackGroundColor="RGBA(0.192, 0.302, 0.475, 0.000)" sp-name="Back Ground Color" />
+            <property name="m_projectionMatrixMode" type="§.Int32" sp-name="Projection Matrix Mode">1</property>
+            <property name="m_SensorSize" type="µ.Vector2" m_SensorSize="(36.0, 24.0)" sp-name="Sensor Size" />
+            <property name="m_LensShift" type="µ.Vector2" m_LensShift="(0.0, 0.0)" sp-name="Lens Shift" />
+            <property name="m_GateFitMode" type="§.Int32" sp-name="Gate Fit Mode">2</property>
+            <property name="m_FocalLength" type="§.Single" sp-name="Focal Length">50</property>
+            <property name="m_NormalizedViewPortRect" type="µ.Rect" sp-name="Normalized View Port Rect">(x:0.00, y:0.00, width:1.00, height:1.00)</property>
+            <property name="near clip plane" type="§.Single" sp-name="Near clip plane">0.3</property>
+            <property name="far clip plane" type="§.Single" sp-name="Far clip plane">1000</property>
+            <property name="field of view" type="§.Single" sp-name="Field of view">60</property>
+            <property name="orthographic" type="§.Boolean" sp-name="Orthographic">False</property>
+            <property name="orthographic size" type="§.Single" sp-name="Orthographic size">5</property>
+            <property name="m_Depth" type="§.Single" sp-name="Depth">-1</property>
+            <property name="m_CullingMask" type="§.UInt32" sp-name="Culling Mask">FFFFFFFF</property>
+            <property name="m_RenderingPath" type="§.String" sp-name="Rendering Path" sp-type="Enum" sp-enum-index="0">Use Graphics Settings</property>
+            <property name="m_TargetDisplay" type="§.Int32" sp-name="Target Display">0</property>
+            <property name="m_TargetEye" type="§.Int32" sp-name="Target Eye">3</property>
+            <property name="m_HDR" type="§.Boolean" sp-name="HDR">True</property>
+            <property name="m_AllowMSAA" type="§.Boolean" sp-name="Allow MSAA">True</property>
+            <property name="m_AllowDynamicResolution" type="§.Boolean" sp-name="Allow Dynamic Resolution">False</property>
+            <property name="m_ForceIntoRT" type="§.Boolean" sp-name="Force Into RT">False</property>
+            <property name="m_OcclusionCulling" type="§.Boolean" sp-name="Occlusion Culling">True</property>
+            <property name="m_StereoConvergence" type="§.Single" sp-name="Stereo Convergence">10</property>
+            <property name="m_StereoSeparation" type="§.Single" sp-name="Stereo Separation">0.022</property>
           </Behaviour>
-          <Behaviour type="µ.AudioListener" id="0x00002A6E" enabled="True" isActiveAndEnabled="True">
+          <Behaviour type="µ.AudioListener" id="0x00002A62" enabled="True" isActiveAndEnabled="True">
             <extends>µ.AudioBehaviour</extends>
           </Behaviour>
         </components>
       </GameObject>
     </gameobjects>
   </GameObject>
-  <GameObject name="EventSystem" id="0x00002A88" layer="0" activeInHierarchy="True" isStatic="False">
-    <Transform id="0x00002A8E" position="(0.0, 0.0, 0.0)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
+  <GameObject name="EventSystem" id="0x00002A7C" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x00002A82" position="(0.0, 0.0, 0.0)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
     <components>
-      <MonoBehaviour type="µ.EventSystems.EventSystem" id="0x00002A8C" enabled="True" isActiveAndEnabled="True">
+      <MonoBehaviour type="µ.EventSystems.EventSystem" id="0x00002A80" enabled="True" isActiveAndEnabled="True">
         <extends>µ.EventSystems.UIBehaviour</extends>
-        <property name="Send Navigation Events" type="§.Boolean">True</property>
-        <property name="Drag Threshold" type="§.Int32">10</property>
+        <property name="m_sendNavigationEvents" type="§.Boolean" sp-name="Send Navigation Events">True</property>
+        <property name="m_DragThreshold" type="§.Int32" sp-name="Drag Threshold">10</property>
       </MonoBehaviour>
-      <MonoBehaviour type="µ.EventSystems.StandaloneInputModule" id="0x00002A8A" enabled="True" isActiveAndEnabled="True">
+      <MonoBehaviour type="µ.EventSystems.StandaloneInputModule" id="0x00002A7E" enabled="True" isActiveAndEnabled="True">
         <extends>µ.EventSystems.PointerInputModule</extends>
         <extends>µ.EventSystems.BaseInputModule</extends>
         <extends>µ.EventSystems.UIBehaviour</extends>
-        <property name="Horizontal Axis" type="§.String">Horizontal</property>
-        <property name="Vertical Axis" type="§.String">Vertical</property>
-        <property name="Submit Button" type="§.String">Submit</property>
-        <property name="Cancel Button" type="§.String">Cancel</property>
-        <property name="Input Actions Per Second" type="§.Single">10</property>
-        <property name="Repeat Delay" type="§.Single">0.5</property>
-        <property name="Force Module Active" type="§.Boolean">False</property>
+        <property name="m_HorizontalAxis" type="§.String" sp-name="Horizontal Axis">Horizontal</property>
+        <property name="m_VerticalAxis" type="§.String" sp-name="Vertical Axis">Vertical</property>
+        <property name="m_SubmitButton" type="§.String" sp-name="Submit Button">Submit</property>
+        <property name="m_CancelButton" type="§.String" sp-name="Cancel Button">Cancel</property>
+        <property name="m_InputActionsPerSecond" type="§.Single" sp-name="Input Actions Per Second">10</property>
+        <property name="m_RepeatDelay" type="§.Single" sp-name="Repeat Delay">0.5</property>
+        <property name="m_ForceModuleActive" type="§.Boolean" sp-name="Force Module Active">False</property>
       </MonoBehaviour>
     </components>
   </GameObject>
-  <GameObject name="Canvas" id="0x00002AAE" layer="5" activeInHierarchy="True" isStatic="False">
-    <RectTransform id="0x00002AB6" pos="(448.5, 302.5, 0.0)" anchorMin="(0.0, 0.0)" anchorMax="(0.0, 0.0)" pivot="(0.5, 0.5)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
+  <GameObject name="Canvas" id="0x00002AA2" layer="5" activeInHierarchy="True" isStatic="False">
+    <RectTransform id="0x00002AAA" pos="(448.5, 302.5, 0.0)" anchorMin="(0.0, 0.0)" anchorMax="(0.0, 0.0)" pivot="(0.5, 0.5)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
     <components>
-      <Behaviour type="µ.Canvas" id="0x00002AB4" enabled="True" isActiveAndEnabled="True">
-        <property name="Render Mode" type="§.String" sp-type="Enum" sp-enum-index="0">Screen Space - Overlay</property>
-        <property name="Plane Distance" type="§.Single">100</property>
-        <property name="Pixel Perfect" type="§.Boolean">False</property>
-        <property name="Receives Events" type="§.Boolean">True</property>
-        <property name="Override Sorting" type="§.Boolean">False</property>
-        <property name="Override Pixel Perfect" type="§.Boolean">False</property>
-        <property name="Sorting Bucket Normalized Size" type="§.Single">0</property>
-        <property name="Additional Shader Channels Flag" type="§.String" sp-type="Enum" sp-enum-index="0">None</property>
+      <Behaviour type="µ.Canvas" id="0x00002AA8" enabled="True" isActiveAndEnabled="True">
+        <property name="m_RenderMode" type="§.String" sp-name="Render Mode" sp-type="Enum" sp-enum-index="0">Screen Space - Overlay</property>
+        <property name="m_PlaneDistance" type="§.Single" sp-name="Plane Distance">100</property>
+        <property name="m_PixelPerfect" type="§.Boolean" sp-name="Pixel Perfect">False</property>
+        <property name="m_ReceivesEvents" type="§.Boolean" sp-name="Receives Events">True</property>
+        <property name="m_OverrideSorting" type="§.Boolean" sp-name="Override Sorting">False</property>
+        <property name="m_OverridePixelPerfect" type="§.Boolean" sp-name="Override Pixel Perfect">False</property>
+        <property name="m_SortingBucketNormalizedSize" type="§.Single" sp-name="Sorting Bucket Normalized Size">0</property>
+        <property name="m_AdditionalShaderChannelsFlag" type="§.String" sp-name="Additional Shader Channels Flag" sp-type="Enum" sp-enum-index="0">None</property>
       </Behaviour>
-      <MonoBehaviour type="µ.UI.CanvasScaler" id="0x00002AB2" enabled="True" isActiveAndEnabled="True">
+      <MonoBehaviour type="µ.UI.CanvasScaler" id="0x00002AA6" enabled="True" isActiveAndEnabled="True">
         <extends>µ.EventSystems.UIBehaviour</extends>
-        <property name="Ui Scale Mode" type="§.String" sp-type="Enum" sp-enum-index="0">Constant Pixel Size</property>
-        <property name="Reference Pixels Per Unit" type="§.Single">100</property>
-        <property name="Scale Factor" type="§.Single">1</property>
-        <property name="Reference Resolution" type="µ.Vector2" Reference_Resolution="(800.0, 600.0)" />
-        <property name="Screen Match Mode" type="§.String" sp-type="Enum" sp-enum-index="0">Match Width Or Height</property>
-        <property name="Match Width Or Height" type="§.Single">0</property>
-        <property name="Physical Unit" type="§.String" sp-type="Enum" sp-enum-index="3">Points</property>
-        <property name="Fallback Screen DPI" type="§.Single">96</property>
-        <property name="Default Sprite DPI" type="§.Single">96</property>
-        <property name="Dynamic Pixels Per Unit" type="§.Single">1</property>
+        <property name="m_UiScaleMode" type="§.String" sp-name="Ui Scale Mode" sp-type="Enum" sp-enum-index="0">Constant Pixel Size</property>
+        <property name="m_ReferencePixelsPerUnit" type="§.Single" sp-name="Reference Pixels Per Unit">100</property>
+        <property name="m_ScaleFactor" type="§.Single" sp-name="Scale Factor">1</property>
+        <property name="m_ReferenceResolution" type="µ.Vector2" m_ReferenceResolution="(800.0, 600.0)" sp-name="Reference Resolution" />
+        <property name="m_ScreenMatchMode" type="§.String" sp-name="Screen Match Mode" sp-type="Enum" sp-enum-index="0">Match Width Or Height</property>
+        <property name="m_MatchWidthOrHeight" type="§.Single" sp-name="Match Width Or Height">0</property>
+        <property name="m_PhysicalUnit" type="§.String" sp-name="Physical Unit" sp-type="Enum" sp-enum-index="3">Points</property>
+        <property name="m_FallbackScreenDPI" type="§.Single" sp-name="Fallback Screen DPI">96</property>
+        <property name="m_DefaultSpriteDPI" type="§.Single" sp-name="Default Sprite DPI">96</property>
+        <property name="m_DynamicPixelsPerUnit" type="§.Single" sp-name="Dynamic Pixels Per Unit">1</property>
       </MonoBehaviour>
-      <MonoBehaviour type="µ.UI.GraphicRaycaster" id="0x00002AB0" enabled="True" isActiveAndEnabled="True">
+      <MonoBehaviour type="µ.UI.GraphicRaycaster" id="0x00002AA4" enabled="True" isActiveAndEnabled="True">
         <extends>µ.EventSystems.BaseRaycaster</extends>
         <extends>µ.EventSystems.UIBehaviour</extends>
-        <property name="Ignore Reversed Graphics" type="§.Boolean">True</property>
-        <property name="Blocking Objects" type="§.String" sp-type="Enum" sp-enum-index="0">None</property>
-        <property name="Blocking Mask" type="§.UInt32">FFFFFFFF</property>
+        <property name="m_IgnoreReversedGraphics" type="§.Boolean" sp-name="Ignore Reversed Graphics">True</property>
+        <property name="m_BlockingObjects" type="§.String" sp-name="Blocking Objects" sp-type="Enum" sp-enum-index="0">None</property>
+        <property name="m_BlockingMask" type="§.UInt32" sp-name="Blocking Mask">FFFFFFFF</property>
       </MonoBehaviour>
     </components>
     <gameobjects>
-      <GameObject name="Button" id="0x00002A90" layer="5" activeInHierarchy="True" isStatic="False">
-        <RectTransform id="0x00002A92" pos="(0.0, 0.0, 0.0)" anchorMin="(0.5, 0.5)" anchorMax="(0.5, 0.5)" pivot="(0.5, 0.5)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
+      <GameObject name="Button" id="0x00002A84" layer="5" activeInHierarchy="True" isStatic="False">
+        <RectTransform id="0x00002A86" pos="(0.0, 0.0, 0.0)" anchorMin="(0.5, 0.5)" anchorMax="(0.5, 0.5)" pivot="(0.5, 0.5)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
         <components>
-          <Component type="µ.CanvasRenderer" id="0x00002A98">
-            <property name="Cull Transparent Mesh" type="§.Boolean">False</property>
+          <Component type="µ.CanvasRenderer" id="0x00002A8C">
+            <property name="m_CullTransparentMesh" type="§.Boolean" sp-name="Cull Transparent Mesh">False</property>
           </Component>
-          <MonoBehaviour type="µ.UI.Image" id="0x00002A96" enabled="True" isActiveAndEnabled="True">
+          <MonoBehaviour type="µ.UI.Image" id="0x00002A8A" enabled="True" isActiveAndEnabled="True">
+            <referenced-by component-id="0x00002A88" property-name="m_TargetGraphic">Canvas -» Button -» MonoBehaviour(µ.UI.Button) •-» m_TargetGraphic</referenced-by>
             <extends>µ.UI.MaskableGraphic</extends>
             <extends>µ.UI.Graphic</extends>
             <extends>µ.EventSystems.UIBehaviour</extends>
@@ -215,20 +222,21 @@
             <implements>µ.UI.ILayoutElement</implements>
             <implements>µ.ICanvasRaycastFilter</implements>
             <implements>µ.UI.IMaskable</implements>
-            <property name="Color" type="µ.Color" Color="RGBA(1.000, 1.000, 1.000, 1.000)" />
-            <property name="Raycast Target" type="§.Boolean">True</property>
-            <property name="On Cull State Changed" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
-            <property name="Sprite" type="µ.Sprite" sp-type="ObjectReference" target-id="0x02E2">UISprite (µ.Sprite)</property>
-            <property name="Type" type="§.String" sp-type="Enum" sp-enum-index="1">Sliced</property>
-            <property name="Preserve Aspect" type="§.Boolean">False</property>
-            <property name="Fill Center" type="§.Boolean">True</property>
-            <property name="Fill Method" type="§.String" sp-type="Enum" sp-enum-index="4">Radial 360</property>
-            <property name="Fill Amount" type="§.Single">1</property>
-            <property name="Fill Clockwise" type="§.Boolean">True</property>
-            <property name="Fill Origin" type="§.Int32">0</property>
-            <property name="Use Sprite Mesh" type="§.Boolean">False</property>
+            <property name="m_Color" type="µ.Color" m_Color="RGBA(1.000, 1.000, 1.000, 1.000)" sp-name="Color" />
+            <property name="m_RaycastTarget" type="§.Boolean" sp-name="Raycast Target">True</property>
+            <property name="m_OnCullStateChanged" type="scenedump.UnknownType" sp-name="On Cull State Changed" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
+            <property name="m_Sprite" type="µ.Sprite" sp-name="Sprite" sp-type="ObjectReference" target-id="0x000002E2">UISprite (µ.Sprite)</property>
+            <property name="m_Type" type="§.String" sp-name="Type" sp-type="Enum" sp-enum-index="1">Sliced</property>
+            <property name="m_PreserveAspect" type="§.Boolean" sp-name="Preserve Aspect">False</property>
+            <property name="m_FillCenter" type="§.Boolean" sp-name="Fill Center">True</property>
+            <property name="m_FillMethod" type="§.String" sp-name="Fill Method" sp-type="Enum" sp-enum-index="4">Radial 360</property>
+            <property name="m_FillAmount" type="§.Single" sp-name="Fill Amount">1</property>
+            <property name="m_FillClockwise" type="§.Boolean" sp-name="Fill Clockwise">True</property>
+            <property name="m_FillOrigin" type="§.Int32" sp-name="Fill Origin">0</property>
+            <property name="m_UseSpriteMesh" type="§.Boolean" sp-name="Use Sprite Mesh">False</property>
           </MonoBehaviour>
-          <MonoBehaviour type="µ.UI.Button" id="0x00002A94" enabled="True" isActiveAndEnabled="True">
+          <MonoBehaviour type="µ.UI.Button" id="0x00002A88" enabled="True" isActiveAndEnabled="True">
+            <referenced-by component-id="0x00002A8E" property-name="theButton">Canvas -» Button -» MonoBehaviour(ButtonHandler) •-» theButton</referenced-by>
             <extends>µ.UI.Selectable</extends>
             <extends>µ.EventSystems.UIBehaviour</extends>
             <implements>µ.EventSystems.IEventSystemHandler</implements>
@@ -241,31 +249,31 @@
             <implements>µ.EventSystems.IMoveHandler</implements>
             <implements>µ.EventSystems.ISubmitHandler</implements>
             <implements>µ.EventSystems.IPointerClickHandler</implements>
-            <property name="Navigation" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
-            <property name="Transition" type="§.String" sp-type="Enum" sp-enum-index="1">Color Tint</property>
-            <property name="Colors" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
-            <property name="Sprite State" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
-            <property name="Animation Triggers" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
-            <property name="Interactable" type="§.Boolean">True</property>
-            <property name="Target Graphic" type="µ.UI.Image" target-name="Button" target-id="0x2A96" sp-type="ObjectReference">Button (µ.UI.Image)</property>
-            <property name="On Click" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
+            <property name="m_Navigation" type="scenedump.UnknownType" sp-name="Navigation" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
+            <property name="m_Transition" type="§.String" sp-name="Transition" sp-type="Enum" sp-enum-index="1">Color Tint</property>
+            <property name="m_Colors" type="scenedump.UnknownType" sp-name="Colors" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
+            <property name="m_SpriteState" type="scenedump.UnknownType" sp-name="Sprite State" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
+            <property name="m_AnimationTriggers" type="scenedump.UnknownType" sp-name="Animation Triggers" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
+            <property name="m_Interactable" type="§.Boolean" sp-name="Interactable">True</property>
+            <property name="m_TargetGraphic" type="µ.UI.Image" target-name="Button" target-id="0x00002A8A" sp-name="Target Graphic" sp-type="ObjectReference">Button (µ.UI.Image)</property>
+            <property name="m_OnClick" type="scenedump.UnknownType" sp-name="On Click" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
           </MonoBehaviour>
-          <MonoBehaviour type="ButtonHandler" id="0x00002A9A" enabled="True" isActiveAndEnabled="True">
-            <property name="The Button" type="µ.UI.Button" target-name="Button" target-id="0x2A94" sp-type="ObjectReference">Button (µ.UI.Button)</property>
-            <property name="Sound" type="µ.AudioSource" target-name="Main" target-id="0x2A78" sp-type="ObjectReference">Main (µ.AudioSource)</property>
-            <property name="Red Material" type="µ.Material" sp-type="ObjectReference" target-id="0x292E">RedMaterial (µ.Material)</property>
-            <property name="Blue Material" type="µ.Material" sp-type="ObjectReference" target-id="0x2A12">BlueMaterial (µ.Material)</property>
-            <property name="Cube" type="µ.GameObject" target-name="Cube" target-id="0x2AA6" sp-type="ObjectReference" />
+          <MonoBehaviour type="ButtonHandler" id="0x00002A8E" enabled="True" isActiveAndEnabled="True">
+            <property name="theButton" type="µ.UI.Button" target-name="Button" target-id="0x00002A88" sp-name="The Button" sp-type="ObjectReference">Button (µ.UI.Button)</property>
+            <property name="sound" type="µ.AudioSource" target-name="Main" target-id="0x00002A6C" sp-name="Sound" sp-type="ObjectReference">Main (µ.AudioSource)</property>
+            <property name="redMaterial" type="µ.Material" sp-name="Red Material" sp-type="ObjectReference" target-id="0x00002922">RedMaterial (µ.Material)</property>
+            <property name="blueMaterial" type="µ.Material" sp-name="Blue Material" sp-type="ObjectReference" target-id="0x00002A06">BlueMaterial (µ.Material)</property>
+            <property name="cube" type="µ.GameObject" target-name="Cube" target-id="0x00002A9A" sp-name="Cube" sp-type="ObjectReference" />
           </MonoBehaviour>
         </components>
         <gameobjects>
-          <GameObject name="Text" id="0x00002A9C" layer="5" activeInHierarchy="True" isStatic="False">
-            <RectTransform id="0x00002A9E" pos="(0.0, 0.0, 0.0)" anchorMin="(0.0, 0.0)" anchorMax="(1.0, 1.0)" pivot="(0.5, 0.5)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
+          <GameObject name="Text" id="0x00002A90" layer="5" activeInHierarchy="True" isStatic="False">
+            <RectTransform id="0x00002A92" pos="(0.0, 0.0, 0.0)" anchorMin="(0.0, 0.0)" anchorMax="(1.0, 1.0)" pivot="(0.5, 0.5)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
             <components>
-              <Component type="µ.CanvasRenderer" id="0x00002AA2">
-                <property name="Cull Transparent Mesh" type="§.Boolean">False</property>
+              <Component type="µ.CanvasRenderer" id="0x00002A96">
+                <property name="m_CullTransparentMesh" type="§.Boolean" sp-name="Cull Transparent Mesh">False</property>
               </Component>
-              <MonoBehaviour type="µ.UI.Text" id="0x00002AA0" enabled="True" isActiveAndEnabled="True">
+              <MonoBehaviour type="µ.UI.Text" id="0x00002A94" enabled="True" isActiveAndEnabled="True">
                 <extends>µ.UI.MaskableGraphic</extends>
                 <extends>µ.UI.Graphic</extends>
                 <extends>µ.EventSystems.UIBehaviour</extends>
@@ -274,11 +282,11 @@
                 <implements>µ.UI.IMaterialModifier</implements>
                 <implements>µ.UI.ILayoutElement</implements>
                 <implements>µ.UI.IMaskable</implements>
-                <property name="Color" type="µ.Color" Color="RGBA(0.196, 0.196, 0.196, 1.000)" />
-                <property name="Raycast Target" type="§.Boolean">True</property>
-                <property name="On Cull State Changed" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
-                <property name="Font Data" type="scenedump.UnknownType" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
-                <property name="Text" type="§.String">Click Me!</property>
+                <property name="m_Color" type="µ.Color" m_Color="RGBA(0.196, 0.196, 0.196, 1.000)" sp-name="Color" />
+                <property name="m_RaycastTarget" type="§.Boolean" sp-name="Raycast Target">True</property>
+                <property name="m_OnCullStateChanged" type="scenedump.UnknownType" sp-name="On Cull State Changed" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
+                <property name="m_FontData" type="scenedump.UnknownType" sp-name="Font Data" sp-type="Generic">«@ToDo:unknown-type[Generic]»</property>
+                <property name="m_Text" type="§.String" sp-name="Text">Click Me!</property>
               </MonoBehaviour>
             </components>
           </GameObject>
@@ -286,36 +294,71 @@
       </GameObject>
     </gameobjects>
   </GameObject>
-  <GameObject name="Main" id="0x00002A76" layer="0" activeInHierarchy="True" isStatic="False">
-    <Transform id="0x00002A7A" position="(9.8, 8.1, -24.7)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
+  <GameObject name="Main" id="0x00002A6A" layer="0" activeInHierarchy="True" isStatic="False">
+    <Transform id="0x00002A6E" position="(9.8, 8.1, -24.7)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
     <components>
-      <Behaviour type="µ.AudioSource" id="0x00002A78" enabled="True" isActiveAndEnabled="True">
+      <Behaviour type="µ.AudioSource" id="0x00002A6C" enabled="True" isActiveAndEnabled="True">
+        <referenced-by component-id="0x00002A8E" property-name="sound">Canvas -» Button -» MonoBehaviour(ButtonHandler) •-» sound</referenced-by>
         <extends>µ.AudioBehaviour</extends>
-        <property name="Audio Clip" type="µ.AudioClip" sp-type="ObjectReference" target-id="0x28C0">beep-08 (µ.AudioClip)</property>
-        <property name="Play On Awake" type="§.Boolean">False</property>
-        <property name="Volume" type="§.Single">1</property>
-        <property name="Pitch" type="§.Single">1</property>
-        <property name="Loop" type="§.Boolean">False</property>
-        <property name="Mute" type="§.Boolean">False</property>
-        <property name="Spatialize" type="§.Boolean">False</property>
-        <property name="Spatialize Post Effects" type="§.Boolean">False</property>
-        <property name="Priority" type="§.Int32">128</property>
-        <property name="Doppler Level" type="§.Single">1</property>
-        <property name="Min Distance" type="§.Single">1</property>
-        <property name="Max Distance" type="§.Single">500</property>
-        <property name="Pan 2D" type="§.Single">0</property>
-        <property name="Rolloff Mode" type="§.String" sp-type="Enum" sp-enum-index="0">Logarithmic Rolloff</property>
-        <property name="Bypass Effects" type="§.Boolean">False</property>
-        <property name="Bypass Listener Effects" type="§.Boolean">False</property>
-        <property name="Bypass Reverb Zones" type="§.Boolean">False</property>
-        <property name="Rolloff Custom Curve" type="µ.AnimationCurve">µ.AnimationCurve</property>
-        <property name="Pan Level Custom Curve" type="µ.AnimationCurve">µ.AnimationCurve</property>
-        <property name="Spread Custom Curve" type="µ.AnimationCurve">µ.AnimationCurve</property>
-        <property name="Reverb Zone Mix Custom Curve" type="µ.AnimationCurve">µ.AnimationCurve</property>
+        <property name="m_audioClip" type="µ.AudioClip" sp-name="Audio Clip" sp-type="ObjectReference" target-id="0x000028B4">beep-08 (µ.AudioClip)</property>
+        <property name="m_PlayOnAwake" type="§.Boolean" sp-name="Play On Awake">False</property>
+        <property name="m_Volume" type="§.Single" sp-name="Volume">1</property>
+        <property name="m_Pitch" type="§.Single" sp-name="Pitch">1</property>
+        <property name="Loop" type="§.Boolean" sp-name="Loop">False</property>
+        <property name="Mute" type="§.Boolean" sp-name="Mute">False</property>
+        <property name="Spatialize" type="§.Boolean" sp-name="Spatialize">False</property>
+        <property name="SpatializePostEffects" type="§.Boolean" sp-name="Spatialize Post Effects">False</property>
+        <property name="Priority" type="§.Int32" sp-name="Priority">128</property>
+        <property name="DopplerLevel" type="§.Single" sp-name="Doppler Level">1</property>
+        <property name="MinDistance" type="§.Single" sp-name="Min Distance">1</property>
+        <property name="MaxDistance" type="§.Single" sp-name="Max Distance">500</property>
+        <property name="Pan2D" type="§.Single" sp-name="Pan 2D">0</property>
+        <property name="rolloffMode" type="§.String" sp-name="Rolloff Mode" sp-type="Enum" sp-enum-index="0">Logarithmic Rolloff</property>
+        <property name="BypassEffects" type="§.Boolean" sp-name="Bypass Effects">False</property>
+        <property name="BypassListenerEffects" type="§.Boolean" sp-name="Bypass Listener Effects">False</property>
+        <property name="BypassReverbZones" type="§.Boolean" sp-name="Bypass Reverb Zones">False</property>
+        <property name="rolloffCustomCurve" type="µ.AnimationCurve" sp-name="Rolloff Custom Curve">µ.AnimationCurve</property>
+        <property name="panLevelCustomCurve" type="µ.AnimationCurve" sp-name="Pan Level Custom Curve">µ.AnimationCurve</property>
+        <property name="spreadCustomCurve" type="µ.AnimationCurve" sp-name="Spread Custom Curve">µ.AnimationCurve</property>
+        <property name="reverbZoneMixCustomCurve" type="µ.AnimationCurve" sp-name="Reverb Zone Mix Custom Curve">µ.AnimationCurve</property>
       </Behaviour>
-      <MonoBehaviour type="CubeRotator" id="0x00002A7C" enabled="True" isActiveAndEnabled="True">
-        <property name="Cube" type="µ.GameObject" target-name="Cube" target-id="0x2AA6" sp-type="ObjectReference" />
+      <MonoBehaviour type="CubeRotator" id="0x00002A70" enabled="True" isActiveAndEnabled="True">
+        <property name="cube" type="µ.GameObject" target-name="Cube" target-id="0x00002A9A" sp-name="Cube" sp-type="ObjectReference" />
       </MonoBehaviour>
     </components>
   </GameObject>
+  <GameObject name="SpherePrefab" tag="Player" id="0xFFFFFA3A" layer="9" activeInHierarchy="True" isStatic="False" prefab="Regular">
+    <Transform id="0xFFFFFA38" position="(9.8, 8.1, -24.7)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
+    <gameobjects>
+      <GameObject name="Sphere" id="0xFFFFFA36" layer="0" activeInHierarchy="True" isStatic="False" prefab="Regular">
+        <Transform id="0xFFFFFA34" position="(9.8, 8.1, -24.7)" rotation="(0.0, 0.0, 0.0)" scale="(1.0, 1.0, 1.0)" />
+        <components>
+          <Component type="µ.MeshFilter" id="0xFFFFFA32" prefab="Regular">
+            <property name="m_Mesh" type="µ.Mesh" sp-name="Mesh" sp-type="ObjectReference" target-id="0x00000252">Sphere (µ.Mesh)</property>
+          </Component>
+          <Component type="µ.MeshRenderer" id="0xFFFFFA30" prefab="Regular">
+            <extends>µ.Renderer</extends>
+            <property name="m_CastShadows" type="§.String" sp-name="Cast Shadows" sp-type="Enum" sp-enum-index="1">On</property>
+            <property name="m_ReceiveShadows" type="§.Boolean" sp-name="Receive Shadows">True</property>
+            <property name="m_DynamicOccludee" type="§.Boolean" sp-name="Dynamic Occludee">True</property>
+            <property name="m_MotionVectors" type="§.String" sp-name="Motion Vectors" sp-type="Enum" sp-enum-index="1">Per Object Motion</property>
+            <property name="m_LightProbeUsage" type="§.Int32" sp-name="Light Probe Usage">1</property>
+            <property name="m_ReflectionProbeUsage" type="§.Int32" sp-name="Reflection Probe Usage">1</property>
+            <property name="m_RenderingLayerMask" type="§.Int32" sp-name="Rendering Layer Mask">1</property>
+            <property name="m_RendererPriority" type="§.Int32" sp-name="Renderer Priority">0</property>
+            <property-array name="m_Materials" type="§.Object[]" dimensions="1" length="1" sp-name="Materials" sp-type="Generic">
+              <value name="m_Materials[0]" type="µ.Material" index="0">Default-Material (µ.Material)</value>
+            </property-array>
+          </Component>
+          <Component type="µ.SphereCollider" id="0xFFFFFA2E" prefab="Regular">
+            <extends>µ.Collider</extends>
+            <property name="m_IsTrigger" type="§.Boolean" sp-name="Is Trigger">False</property>
+            <property name="m_Radius" type="§.Single" sp-name="Radius">0.5</property>
+            <property name="m_Center" type="µ.Vector3" m_Center="(0.0, 0.0, 0.0)" sp-name="Center" />
+          </Component>
+        </components>
+      </GameObject>
+    </gameobjects>
+  </GameObject>
+  <references />
 </Scene>
